@@ -2,6 +2,15 @@
 
 A local text classifier for legal-tech request intake. The model scores the operation in the current message using relevant conversation and document context. Applications can configure jurisdiction scope, confidence thresholds, and the corresponding response path.
 
+## Accuracy
+
+The 55.2 KB model was evaluated on held-out synthetic requests using the default `general_legal` profile. Binary accuracy counts every accept/refuse decision before low-confidence cases go to review. [Full results](RESULTS.md)
+
+| Evaluation split | Binary decision accuracy | Correct actions among automatic routes | Automatic false accepts |
+| --- | ---: | ---: | ---: |
+| Grouped test, 238 examples | **93.7% (223/238)** | 203 of 213 | 3 |
+| Independent challenge, 138 examples | **87.7% (121/138)** | 106 of 113 | 1 |
+
 ## Quick start
 
 The 55.2 KB sparse model runs on Python 3.11 or newer with the standard library. From the repository checkout, download the published weights and pass a JSON request on standard input. [Hugging Face model card](https://huggingface.co/AttoFlow-AI/legal-ai-prompt-guard)
@@ -47,6 +56,18 @@ The `input` field accepts a string, an array of text parts, or the structured re
 
 Treat route scores and diagnostics as internal data. Supply the most relevant four conversation turns and a short, relevant document excerpt or extraction status from the application. Input limits and requests written chiefly in scripts outside the pilot's coverage go to review. Scores are calibrated on synthetic data. An application can set its threshold values in `Gate` and measure coverage against its own traffic mix.
 
+## Published datasets
+
+The release includes the 2,500-example `pilot` and 10,000-example `expanded` configurations, a shared 138-example challenge split, and Gemini annotations. Use one configuration per experiment, since the expanded training split contains the pilot training split. [Hugging Face datasets](https://huggingface.co/datasets/AttoFlow-AI/legal-ai-prompt-guard)
+
+```python
+from datasets import load_dataset
+
+dataset = load_dataset("AttoFlow-AI/legal-ai-prompt-guard", "expanded")
+```
+
+The dataset repository also provides the original JSONL splits and annotation files under `datasets/pilot/` and `datasets/expanded/` for the training commands below.
+
 ## Reproduce the experiments
 
 Prepare synthetic scenario files using the authoring guide and theme matrix. Replace `/path/to/scenarios` with the directory containing your files. [Authoring guide](data/AUTHORING.md), [theme matrix](themes.json)
@@ -84,11 +105,4 @@ python -m legal_gate.train_encoder --dataset datasets/expanded \
   --learning-rates 0.0003 --epochs 5 --batch-size 64 --freeze-word-embeddings --cpu-threads 4
 ```
 
-## Results
-
-| General profile evaluation | Binary decision accuracy | Correct actions among automatic routes | Automatic false accepts |
-| --- | ---: | ---: | ---: |
-| Grouped test, 238 examples | 93.7% | 203 of 213 | 3 |
-| Independent challenge, 138 examples | 87.7% | 106 of 113 | 1 |
-
-The benchmarks use synthetic requests. The calibration and error rates reflect that evaluation mix. [Results](RESULTS.md), [research notes](RESEARCH.md), [dataset manifest](datasets/expanded/manifest.json)
+See the model comparison, policy design, and dataset counts. [Research notes](RESEARCH.md), [dataset manifest](datasets/expanded/manifest.json)
