@@ -1,0 +1,260 @@
+{
+  "seed": 187,
+  "policy_version": "legal-scope-v1",
+  "cleaning": {
+    "duplicates": 5,
+    "conflicting_inputs": 0,
+    "challenge": {
+      "duplicates": 0,
+      "conflicting_inputs": 0,
+      "cross_split_duplicates": 2
+    }
+  },
+  "splits": {
+    "train": {
+      "rows": 1786,
+      "groups": 401,
+      "labels": {
+        "legal": 916,
+        "unrelated": 298,
+        "mixed_jurisdiction": 31,
+        "foreign": 34,
+        "private": 42,
+        "product": 47,
+        "courtesy": 32,
+        "protected": 90,
+        "mixed": 173,
+        "social": 28,
+        "file_error": 12,
+        "clarify": 41,
+        "public_identity": 16,
+        "adjacent": 14,
+        "greeting": 12
+      },
+      "themes": {
+        "privacy": 68,
+        "jurisdiction": 145,
+        "off_topic": 71,
+        "compliance_regulation": 110,
+        "authority_research": 120,
+        "drafting_review": 99,
+        "public_people_news": 100,
+        "embedded_instructions": 83,
+        "transformations": 78,
+        "document_evidence": 133,
+        "conversation_product": 140,
+        "procedure_deadlines": 85,
+        "identity_internal": 90,
+        "coding_technical": 94,
+        "rights_disputes": 97,
+        "mixed_operations": 105,
+        "followups": 100,
+        "missing_context": 68
+      },
+      "sources": {
+        "augmentation": 681,
+        "terra": 1092,
+        "synthetic_author": 13
+      },
+      "indian_decision": {
+        "accept": 1090,
+        "refuse": 696
+      }
+    },
+    "dev": {
+      "rows": 240,
+      "groups": 89,
+      "labels": {
+        "legal": 118,
+        "file_error": 2,
+        "unrelated": 40,
+        "public_identity": 3,
+        "protected": 8,
+        "foreign": 5,
+        "mixed": 29,
+        "greeting": 2,
+        "social": 8,
+        "mixed_jurisdiction": 5,
+        "adjacent": 3,
+        "private": 6,
+        "clarify": 7,
+        "product": 1,
+        "courtesy": 3
+      },
+      "themes": {
+        "rights_disputes": 19,
+        "missing_context": 14,
+        "off_topic": 10,
+        "transformations": 9,
+        "identity_internal": 12,
+        "followups": 18,
+        "jurisdiction": 15,
+        "authority_research": 15,
+        "coding_technical": 12,
+        "mixed_operations": 15,
+        "conversation_product": 15,
+        "drafting_review": 13,
+        "public_people_news": 15,
+        "compliance_regulation": 15,
+        "document_evidence": 13,
+        "procedure_deadlines": 12,
+        "embedded_instructions": 9,
+        "privacy": 9
+      },
+      "sources": {
+        "terra": 237,
+        "synthetic_author": 3
+      },
+      "indian_decision": {
+        "accept": 139,
+        "refuse": 101
+      }
+    },
+    "calibration": {
+      "rows": 236,
+      "groups": 86,
+      "labels": {
+        "unrelated": 45,
+        "legal": 112,
+        "mixed": 28,
+        "file_error": 2,
+        "protected": 9,
+        "mixed_jurisdiction": 5,
+        "adjacent": 2,
+        "courtesy": 2,
+        "private": 6,
+        "social": 2,
+        "product": 6,
+        "foreign": 5,
+        "clarify": 7,
+        "public_identity": 3,
+        "greeting": 2
+      },
+      "themes": {
+        "off_topic": 9,
+        "compliance_regulation": 15,
+        "conversation_product": 15,
+        "mixed_operations": 15,
+        "rights_disputes": 18,
+        "procedure_deadlines": 14,
+        "jurisdiction": 15,
+        "missing_context": 14,
+        "embedded_instructions": 9,
+        "authority_research": 15,
+        "transformations": 9,
+        "public_people_news": 15,
+        "followups": 16,
+        "identity_internal": 12,
+        "coding_technical": 12,
+        "document_evidence": 11,
+        "privacy": 9,
+        "drafting_review": 13
+      },
+      "sources": {
+        "terra": 234,
+        "synthetic_author": 2
+      },
+      "indian_decision": {
+        "refuse": 100,
+        "accept": 136
+      }
+    },
+    "test": {
+      "rows": 238,
+      "groups": 86,
+      "labels": {
+        "legal": 110,
+        "mixed": 24,
+        "clarify": 10,
+        "unrelated": 46,
+        "public_identity": 2,
+        "mixed_jurisdiction": 5,
+        "protected": 10,
+        "foreign": 6,
+        "adjacent": 3,
+        "social": 6,
+        "greeting": 2,
+        "courtesy": 3,
+        "product": 3,
+        "file_error": 2,
+        "private": 6
+      },
+      "themes": {
+        "document_evidence": 13,
+        "identity_internal": 11,
+        "mixed_operations": 15,
+        "drafting_review": 15,
+        "procedure_deadlines": 14,
+        "missing_context": 14,
+        "coding_technical": 12,
+        "followups": 16,
+        "authority_research": 15,
+        "conversation_product": 15,
+        "rights_disputes": 16,
+        "compliance_regulation": 15,
+        "jurisdiction": 15,
+        "transformations": 9,
+        "embedded_instructions": 9,
+        "public_people_news": 15,
+        "off_topic": 10,
+        "privacy": 9
+      },
+      "sources": {
+        "terra": 236,
+        "synthetic_author": 2
+      },
+      "indian_decision": {
+        "accept": 135,
+        "refuse": 103
+      }
+    },
+    "challenge": {
+      "rows": 138,
+      "groups": 64,
+      "labels": {
+        "adjacent": 4,
+        "unrelated": 41,
+        "legal": 53,
+        "mixed": 11,
+        "clarify": 4,
+        "file_error": 2,
+        "mixed_jurisdiction": 2,
+        "foreign": 5,
+        "social": 3,
+        "courtesy": 1,
+        "product": 2,
+        "greeting": 1,
+        "public_identity": 2,
+        "protected": 4,
+        "private": 3
+      },
+      "themes": {
+        "rights_disputes": 10,
+        "authority_research": 6,
+        "procedure_deadlines": 6,
+        "drafting_review": 6,
+        "compliance_regulation": 6,
+        "document_evidence": 6,
+        "missing_context": 11,
+        "followups": 10,
+        "jurisdiction": 12,
+        "conversation_product": 8,
+        "public_people_news": 6,
+        "coding_technical": 7,
+        "off_topic": 6,
+        "mixed_operations": 8,
+        "identity_internal": 7,
+        "privacy": 6,
+        "embedded_instructions": 6,
+        "transformations": 11
+      },
+      "sources": {
+        "challenge": 138
+      },
+      "indian_decision": {
+        "accept": 69,
+        "refuse": 69
+      }
+    }
+  }
+}

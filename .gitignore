@@ -1,0 +1,15 @@
+__pycache__/
+.venv/
+.env
+.env.*
+.runtime/
+*.pt
+*.onnx.data
+*.egg-info/
+__pypackages__/
+weights.json.gz
+datasets/**/*.jsonl
+reports/**/*.jsonl
+models/**/*.onnx
+models/**/tokenizer.json
+models/**/model.json

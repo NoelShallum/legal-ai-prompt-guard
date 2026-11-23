@@ -1,0 +1,330 @@
+{
+  "india_legal": {
+    "dev": {
+      "rows": 240,
+      "counts": {
+        "expected_accept": 139,
+        "legal": 115,
+        "auto_correct_action": 183,
+        "false_accept": 3,
+        "false_refuse": 4,
+        "review": 49,
+        "review:low_confidence": 49,
+        "expected_refuse": 101,
+        "refuse_scope": 73,
+        "auto_wrong_action": 8,
+        "refuse_internal": 3
+      },
+      "coverage": 0.7958333333333333,
+      "covered_action_accuracy": 0.9581151832460733,
+      "group_bootstrap_95": {
+        "coverage": [
+          0.725,
+          0.8617920195938361
+        ],
+        "covered_wrong_action": [
+          0.015384615384615385,
+          0.07608695652173914
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.07843688037012554
+        ],
+        "false_refuse_among_accepts": [
+          0.006895370807746812,
+          0.057971014492753624
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.197525493102148,
+        "p95": 3.740656859008595
+      }
+    },
+    "calibration": {
+      "rows": 236,
+      "counts": {
+        "expected_refuse": 100,
+        "refuse_scope": 77,
+        "auto_correct_action": 192,
+        "false_accept": 2,
+        "false_refuse": 1,
+        "expected_accept": 136,
+        "legal": 114,
+        "review": 36,
+        "review:low_confidence": 36,
+        "refuse_internal": 9,
+        "auto_wrong_action": 8
+      },
+      "coverage": 0.847457627118644,
+      "covered_action_accuracy": 0.96,
+      "group_bootstrap_95": {
+        "coverage": [
+          0.7883691688670942,
+          0.8991596638655462
+        ],
+        "covered_wrong_action": [
+          0.01449101170568562,
+          0.07253886010362694
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.052083333333333336
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.024004838709677394
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 1.9939409976359457,
+        "p95": 3.446669754339382
+      }
+    },
+    "test": {
+      "rows": 238,
+      "counts": {
+        "expected_accept": 135,
+        "legal": 113,
+        "auto_correct_action": 191,
+        "false_accept": 4,
+        "false_refuse": 2,
+        "expected_refuse": 103,
+        "refuse_scope": 76,
+        "auto_wrong_action": 8,
+        "review": 39,
+        "review:low_confidence": 39,
+        "refuse_internal": 10
+      },
+      "coverage": 0.8361344537815126,
+      "covered_action_accuracy": 0.9597989949748744,
+      "group_bootstrap_95": {
+        "coverage": [
+          0.7676348547717843,
+          0.9045692550879273
+        ],
+        "covered_wrong_action": [
+          0.014017061508367746,
+          0.07216494845360824
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.08913118811881175
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.038468992248061974
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.162743010558188,
+        "p95": 3.474396702949889
+      }
+    },
+    "challenge": {
+      "rows": 138,
+      "counts": {
+        "expected_accept": 69,
+        "review": 33,
+        "review:low_confidence": 30,
+        "expected_refuse": 69,
+        "refuse_scope": 49,
+        "auto_correct_action": 99,
+        "false_accept": 1,
+        "false_refuse": 2,
+        "legal": 53,
+        "auto_wrong_action": 6,
+        "clarify": 1,
+        "refuse_internal": 2,
+        "review:unsupported_script": 3
+      },
+      "coverage": 0.7608695652173914,
+      "covered_action_accuracy": 0.9428571428571428,
+      "group_bootstrap_95": {
+        "coverage": [
+          0.6762589928057554,
+          0.8433007833174552
+        ],
+        "covered_wrong_action": [
+          0.010309278350515464,
+          0.11818181818181818
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.04413410886742748
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.07352941176470588
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.0281955075915903,
+        "p95": 3.703312299330719
+      }
+    }
+  },
+  "general_legal": {
+    "dev": {
+      "rows": 240,
+      "counts": {
+        "expected_accept": 149,
+        "legal": 120,
+        "auto_correct_action": 176,
+        "false_accept": 3,
+        "false_refuse": 4,
+        "review": 56,
+        "review:low_confidence": 56,
+        "expected_refuse": 91,
+        "refuse_scope": 61,
+        "auto_wrong_action": 8,
+        "refuse_internal": 3
+      },
+      "coverage": 0.7666666666666667,
+      "covered_action_accuracy": 0.9565217391304348,
+      "group_bootstrap_95": {
+        "coverage": [
+          0.6932690296035426,
+          0.8353909465020576
+        ],
+        "covered_wrong_action": [
+          0.01612474262182567,
+          0.07865583660818064
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.08791208791208792
+        ],
+        "false_refuse_among_accepts": [
+          0.00641025641025641,
+          0.05405405405405406
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.191813982790336,
+        "p95": 4.127640606020575
+      }
+    },
+    "calibration": {
+      "rows": 236,
+      "counts": {
+        "expected_refuse": 90,
+        "refuse_scope": 67,
+        "auto_correct_action": 187,
+        "false_accept": 2,
+        "false_refuse": 1,
+        "expected_accept": 146,
+        "legal": 120,
+        "review": 40,
+        "review:low_confidence": 40,
+        "refuse_internal": 9,
+        "auto_wrong_action": 9
+      },
+      "coverage": 0.8305084745762712,
+      "covered_action_accuracy": 0.9540816326530612,
+      "group_bootstrap_95": {
+        "coverage": [
+          0.7732750995134896,
+          0.8816442384814187
+        ],
+        "covered_wrong_action": [
+          0.01845878136200717,
+          0.08164101706256267
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.05747126436781609
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.022556390977443608
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.2440019965870306,
+        "p95": 3.616714762756601
+      }
+    },
+    "test": {
+      "rows": 238,
+      "counts": {
+        "expected_accept": 146,
+        "legal": 119,
+        "auto_correct_action": 190,
+        "false_accept": 2,
+        "false_refuse": 1,
+        "expected_refuse": 92,
+        "refuse_scope": 66,
+        "review": 43,
+        "review:low_confidence": 43,
+        "refuse_internal": 10,
+        "auto_wrong_action": 5
+      },
+      "coverage": 0.819327731092437,
+      "covered_action_accuracy": 0.9743589743589743,
+      "group_bootstrap_95": {
+        "coverage": [
+          0.7521720862257947,
+          0.8860785221776267
+        ],
+        "covered_wrong_action": [
+          0.005208333333333333,
+          0.04864864864864865
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.054945054945054944
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.02531645569620253
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.536741507356055,
+        "p95": 4.158931253186893
+      }
+    },
+    "challenge": {
+      "rows": 138,
+      "counts": {
+        "expected_accept": 76,
+        "review": 33,
+        "review:low_confidence": 30,
+        "expected_refuse": 62,
+        "refuse_scope": 46,
+        "auto_correct_action": 98,
+        "false_accept": 0,
+        "false_refuse": 4,
+        "legal": 56,
+        "auto_wrong_action": 7,
+        "clarify": 1,
+        "refuse_internal": 2,
+        "review:unsupported_script": 3
+      },
+      "coverage": 0.7608695652173914,
+      "covered_action_accuracy": 0.9333333333333333,
+      "group_bootstrap_95": {
+        "coverage": [
+          0.6788255995828988,
+          0.841726618705036
+        ],
+        "covered_wrong_action": [
+          0.017857142857142856,
+          0.13208991143627255
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.0
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.11538461538461539
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.1152265107957646,
+        "p95": 4.532408727391157
+      }
+    }
+  }
+}

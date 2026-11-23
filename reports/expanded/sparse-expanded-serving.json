@@ -1,0 +1,576 @@
+{
+  "india_legal": {
+    "dev": {
+      "rows": 240,
+      "counts": {
+        "expected_accept": 139,
+        "legal": 113,
+        "covered_expected_accept": 125,
+        "auto_correct_action": 194,
+        "false_accept": 3,
+        "false_refuse": 3,
+        "file_error": 2,
+        "expected_refuse": 101,
+        "refuse_scope": 64,
+        "covered_expected_refuse": 78,
+        "public_identity": 3,
+        "refuse_internal": 7,
+        "review": 37,
+        "review:low_confidence": 37,
+        "greeting": 1,
+        "auto_wrong_action": 9,
+        "refuse_private": 5,
+        "product": 1,
+        "clarify": 4,
+        "scope_redirect": 2,
+        "courtesy": 1
+      },
+      "coverage": 0.8458333333333333,
+      "covered_action_accuracy": 0.9556650246305419,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.8357789016311703,
+          "modeled_false_refusals_per_1000": 10.79136690647482,
+          "modeled_false_accepts_per_1000": 14.85148514851485
+        },
+        "0.75": {
+          "modeled_coverage": 0.8675297385853693,
+          "modeled_false_refusals_per_1000": 16.18705035971223,
+          "modeled_false_accepts_per_1000": 7.425742574257425
+        },
+        "0.9": {
+          "modeled_coverage": 0.8865802407578887,
+          "modeled_false_refusals_per_1000": 19.424460431654676,
+          "modeled_false_accepts_per_1000": 2.9702970297029694
+        },
+        "0.95": {
+          "modeled_coverage": 0.8929304081487285,
+          "modeled_false_refusals_per_1000": 20.503597122302157,
+          "modeled_false_accepts_per_1000": 1.4851485148514865
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.7941027625625149,
+          0.8938775510204081
+        ],
+        "covered_wrong_action": [
+          0.01562097293814433,
+          0.07729468599033816
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.06796116504854369
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.04827586206896552
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 3.098542001680471,
+        "p95": 6.546508856990835
+      }
+    },
+    "calibration": {
+      "rows": 236,
+      "counts": {
+        "expected_refuse": 100,
+        "refuse_scope": 65,
+        "covered_expected_refuse": 72,
+        "auto_correct_action": 186,
+        "false_accept": 2,
+        "false_refuse": 3,
+        "expected_accept": 136,
+        "legal": 105,
+        "covered_expected_accept": 122,
+        "review": 42,
+        "review:low_confidence": 42,
+        "file_error": 2,
+        "refuse_internal": 5,
+        "courtesy": 1,
+        "refuse_private": 3,
+        "auto_wrong_action": 8,
+        "product": 4,
+        "clarify": 4,
+        "public_identity": 4,
+        "greeting": 1
+      },
+      "coverage": 0.8220338983050848,
+      "covered_action_accuracy": 0.9587628865979382,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.8085294117647059,
+          "modeled_false_refusals_per_1000": 11.029411764705882,
+          "modeled_false_accepts_per_1000": 10.0
+        },
+        "0.75": {
+          "modeled_coverage": 0.8527941176470588,
+          "modeled_false_refusals_per_1000": 16.544117647058822,
+          "modeled_false_accepts_per_1000": 5.0
+        },
+        "0.9": {
+          "modeled_coverage": 0.8793529411764706,
+          "modeled_false_refusals_per_1000": 19.852941176470587,
+          "modeled_false_accepts_per_1000": 1.9999999999999996
+        },
+        "0.95": {
+          "modeled_coverage": 0.8882058823529412,
+          "modeled_false_refusals_per_1000": 20.955882352941174,
+          "modeled_false_accepts_per_1000": 1.0000000000000009
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.774468085106383,
+          0.8695652173913043
+        ],
+        "covered_wrong_action": [
+          0.014563106796116505,
+          0.07567772317772317
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.050012626262626196
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.059605120094889774
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 3.6484739976003766,
+        "p95": 6.685972002742346
+      }
+    },
+    "test": {
+      "rows": 238,
+      "counts": {
+        "expected_accept": 135,
+        "legal": 106,
+        "covered_expected_accept": 121,
+        "auto_correct_action": 198,
+        "false_accept": 3,
+        "false_refuse": 2,
+        "expected_refuse": 103,
+        "refuse_scope": 67,
+        "covered_expected_refuse": 85,
+        "review": 32,
+        "review:low_confidence": 32,
+        "public_identity": 3,
+        "refuse_internal": 10,
+        "clarify": 7,
+        "scope_redirect": 3,
+        "auto_wrong_action": 8,
+        "product": 2,
+        "file_error": 2,
+        "refuse_private": 4,
+        "courtesy": 2
+      },
+      "coverage": 0.865546218487395,
+      "covered_action_accuracy": 0.9611650485436893,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.8607695073714492,
+          "modeled_false_refusals_per_1000": 7.407407407407407,
+          "modeled_false_accepts_per_1000": 14.563106796116504
+        },
+        "0.75": {
+          "modeled_coverage": 0.8785329018338728,
+          "modeled_false_refusals_per_1000": 11.11111111111111,
+          "modeled_false_accepts_per_1000": 7.281553398058252
+        },
+        "0.9": {
+          "modeled_coverage": 0.8891909385113269,
+          "modeled_false_refusals_per_1000": 13.333333333333334,
+          "modeled_false_accepts_per_1000": 2.9126213592233006
+        },
+        "0.95": {
+          "modeled_coverage": 0.8927436174038117,
+          "modeled_false_refusals_per_1000": 14.074074074074074,
+          "modeled_false_accepts_per_1000": 1.4563106796116516
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.8237820678932366,
+          0.9057438349446545
+        ],
+        "covered_wrong_action": [
+          0.014084507042253521,
+          0.07142857142857142
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.06482487922705309
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.03571428571428571
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.5343510060338303,
+        "p95": 6.77605795499403
+      }
+    },
+    "challenge": {
+      "rows": 138,
+      "counts": {
+        "expected_accept": 69,
+        "legal": 46,
+        "covered_expected_accept": 52,
+        "auto_correct_action": 105,
+        "false_accept": 1,
+        "false_refuse": 1,
+        "expected_refuse": 69,
+        "refuse_scope": 49,
+        "covered_expected_refuse": 59,
+        "review": 27,
+        "review:low_confidence": 24,
+        "auto_wrong_action": 6,
+        "clarify": 1,
+        "scope_redirect": 3,
+        "courtesy": 1,
+        "product": 2,
+        "public_identity": 2,
+        "refuse_internal": 4,
+        "refuse_private": 3,
+        "review:unsupported_script": 3
+      },
+      "coverage": 0.8043478260869565,
+      "covered_action_accuracy": 0.9459459459459459,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.8043478260869565,
+          "modeled_false_refusals_per_1000": 7.246376811594203,
+          "modeled_false_accepts_per_1000": 7.246376811594203
+        },
+        "0.75": {
+          "modeled_coverage": 0.7789855072463767,
+          "modeled_false_refusals_per_1000": 10.869565217391305,
+          "modeled_false_accepts_per_1000": 3.6231884057971016
+        },
+        "0.9": {
+          "modeled_coverage": 0.7637681159420291,
+          "modeled_false_refusals_per_1000": 13.043478260869566,
+          "modeled_false_accepts_per_1000": 1.4492753623188401
+        },
+        "0.95": {
+          "modeled_coverage": 0.758695652173913,
+          "modeled_false_refusals_per_1000": 13.768115942028984,
+          "modeled_false_accepts_per_1000": 0.724637681159421
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.7352941176470589,
+          0.8652588123213718
+        ],
+        "covered_wrong_action": [
+          0.017699115044247787,
+          0.09734513274336283
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.045454545454545456
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.045454545454545456
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 1.805174004402943,
+        "p95": 3.786450000188779
+      }
+    }
+  },
+  "general_legal": {
+    "dev": {
+      "rows": 240,
+      "counts": {
+        "expected_accept": 149,
+        "legal": 124,
+        "covered_expected_accept": 137,
+        "auto_correct_action": 196,
+        "false_accept": 3,
+        "false_refuse": 4,
+        "file_error": 2,
+        "expected_refuse": 91,
+        "refuse_scope": 55,
+        "covered_expected_refuse": 69,
+        "public_identity": 3,
+        "refuse_internal": 7,
+        "review": 34,
+        "review:low_confidence": 34,
+        "greeting": 1,
+        "scope_redirect": 3,
+        "auto_wrong_action": 10,
+        "refuse_private": 5,
+        "product": 1,
+        "clarify": 4,
+        "courtesy": 1
+      },
+      "coverage": 0.8583333333333333,
+      "covered_action_accuracy": 0.9514563106796117,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.8388524227450402,
+          "modeled_false_refusals_per_1000": 13.422818791946309,
+          "modeled_false_accepts_per_1000": 16.483516483516482
+        },
+        "0.75": {
+          "modeled_coverage": 0.8791577549966811,
+          "modeled_false_refusals_per_1000": 20.13422818791946,
+          "modeled_false_accepts_per_1000": 8.241758241758241
+        },
+        "0.9": {
+          "modeled_coverage": 0.9033409543476657,
+          "modeled_false_refusals_per_1000": 24.161073825503355,
+          "modeled_false_accepts_per_1000": 3.2967032967032965
+        },
+        "0.95": {
+          "modeled_coverage": 0.911402020797994,
+          "modeled_false_refusals_per_1000": 25.503355704697984,
+          "modeled_false_accepts_per_1000": 1.6483516483516498
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.8071671895148097,
+          0.9047766019988241
+        ],
+        "covered_wrong_action": [
+          0.019702018738529895,
+          0.08041576932280442
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.07608695652173914
+        ],
+        "false_refuse_among_accepts": [
+          0.0064516129032258064,
+          0.0537003446399419
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.342218504054472,
+        "p95": 4.432543592702132
+      }
+    },
+    "calibration": {
+      "rows": 236,
+      "counts": {
+        "expected_refuse": 90,
+        "refuse_scope": 58,
+        "covered_expected_refuse": 68,
+        "auto_correct_action": 192,
+        "false_accept": 2,
+        "false_refuse": 2,
+        "expected_accept": 146,
+        "legal": 116,
+        "covered_expected_accept": 132,
+        "review": 36,
+        "review:low_confidence": 36,
+        "file_error": 2,
+        "refuse_internal": 6,
+        "courtesy": 1,
+        "refuse_private": 4,
+        "auto_wrong_action": 8,
+        "product": 4,
+        "clarify": 4,
+        "public_identity": 4,
+        "greeting": 1
+      },
+      "coverage": 0.847457627118644,
+      "covered_action_accuracy": 0.96,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.8298325722983257,
+          "modeled_false_refusals_per_1000": 6.8493150684931505,
+          "modeled_false_accepts_per_1000": 11.11111111111111
+        },
+        "0.75": {
+          "modeled_coverage": 0.8669710806697107,
+          "modeled_false_refusals_per_1000": 10.273972602739725,
+          "modeled_false_accepts_per_1000": 5.555555555555555
+        },
+        "0.9": {
+          "modeled_coverage": 0.8892541856925418,
+          "modeled_false_refusals_per_1000": 12.32876712328767,
+          "modeled_false_accepts_per_1000": 2.222222222222222
+        },
+        "0.95": {
+          "modeled_coverage": 0.8966818873668188,
+          "modeled_false_refusals_per_1000": 13.013698630136984,
+          "modeled_false_accepts_per_1000": 1.1111111111111123
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.7947467967725124,
+          0.8960066390041493
+        ],
+        "covered_wrong_action": [
+          0.01485148514851485,
+          0.06896551724137931
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.055571161048689054
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.034722222222222224
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.13390399585478,
+        "p95": 3.698931737744715
+      }
+    },
+    "test": {
+      "rows": 238,
+      "counts": {
+        "expected_accept": 146,
+        "legal": 119,
+        "covered_expected_accept": 136,
+        "auto_correct_action": 203,
+        "false_accept": 3,
+        "false_refuse": 4,
+        "expected_refuse": 92,
+        "refuse_scope": 61,
+        "covered_expected_refuse": 77,
+        "review": 25,
+        "review:low_confidence": 25,
+        "public_identity": 3,
+        "refuse_internal": 10,
+        "clarify": 7,
+        "scope_redirect": 3,
+        "auto_wrong_action": 10,
+        "product": 2,
+        "file_error": 2,
+        "refuse_private": 4,
+        "courtesy": 2
+      },
+      "coverage": 0.8949579831932774,
+      "covered_action_accuracy": 0.9530516431924883,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.8842316855270994,
+          "modeled_false_refusals_per_1000": 13.698630136986301,
+          "modeled_false_accepts_per_1000": 16.304347826086957
+        },
+        "0.75": {
+          "modeled_coverage": 0.9078692674210839,
+          "modeled_false_refusals_per_1000": 20.54794520547945,
+          "modeled_false_accepts_per_1000": 8.152173913043478
+        },
+        "0.9": {
+          "modeled_coverage": 0.9220518165574747,
+          "modeled_false_refusals_per_1000": 24.65753424657534,
+          "modeled_false_accepts_per_1000": 3.2608695652173907
+        },
+        "0.95": {
+          "modeled_coverage": 0.9267793329362716,
+          "modeled_false_refusals_per_1000": 26.02739726027397,
+          "modeled_false_accepts_per_1000": 1.630434782608697
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.8583682045779686,
+          0.9294605809128631
+        ],
+        "covered_wrong_action": [
+          0.018018018018018018,
+          0.08370095277123245
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.07142857142857142
+        ],
+        "false_refuse_among_accepts": [
+          0.006535947712418301,
+          0.05442176870748299
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.2127225092845038,
+        "p95": 3.9433346435544077
+      }
+    },
+    "challenge": {
+      "rows": 138,
+      "counts": {
+        "expected_accept": 76,
+        "legal": 53,
+        "covered_expected_accept": 60,
+        "auto_correct_action": 106,
+        "false_accept": 1,
+        "false_refuse": 2,
+        "expected_refuse": 62,
+        "refuse_scope": 44,
+        "covered_expected_refuse": 53,
+        "review": 25,
+        "review:low_confidence": 22,
+        "auto_wrong_action": 7,
+        "clarify": 1,
+        "scope_redirect": 3,
+        "courtesy": 1,
+        "product": 2,
+        "public_identity": 2,
+        "refuse_internal": 4,
+        "refuse_private": 3,
+        "review:unsupported_script": 3
+      },
+      "coverage": 0.8188405797101449,
+      "covered_action_accuracy": 0.9380530973451328,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.8221561969439728,
+          "modeled_false_refusals_per_1000": 13.157894736842104,
+          "modeled_false_accepts_per_1000": 8.064516129032258
+        },
+        "0.75": {
+          "modeled_coverage": 0.8058149405772496,
+          "modeled_false_refusals_per_1000": 19.736842105263158,
+          "modeled_false_accepts_per_1000": 4.032258064516129
+        },
+        "0.9": {
+          "modeled_coverage": 0.7960101867572156,
+          "modeled_false_refusals_per_1000": 23.68421052631579,
+          "modeled_false_accepts_per_1000": 1.612903225806451
+        },
+        "0.95": {
+          "modeled_coverage": 0.792741935483871,
+          "modeled_false_refusals_per_1000": 24.999999999999996,
+          "modeled_false_accepts_per_1000": 0.8064516129032265
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.7462289615751032,
+          0.8776978417266187
+        ],
+        "covered_wrong_action": [
+          0.01801399613899614,
+          0.11506070357639134
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.05084745762711865
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.06759070714550154
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 1.7415315087419003,
+        "p95": 3.325569555454422
+      }
+    }
+  }
+}

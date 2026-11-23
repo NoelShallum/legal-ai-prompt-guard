@@ -1,0 +1,26 @@
+{
+  "version": "legal-scope-v1",
+  "pilot_size": 2500,
+  "expanded_size": 10000,
+  "planning_accept_prevalence": 0.90,
+  "themes": [
+    {"id": "authority_research", "accept": 140, "refuse": 25, "coverage": "Central and State Acts, rules, notifications, cases, citations, precedent, and statutory interpretation."},
+    {"id": "procedure_deadlines", "accept": 110, "refuse": 15, "coverage": "Civil and criminal procedure, bail, appeals, tribunals, limitation, filing logistics, and operationally unrelated lookalikes."},
+    {"id": "drafting_review", "accept": 115, "refuse": 25, "coverage": "Legal notices, pleadings, submissions, contracts, clauses, editing, and contrastive creative or marketing requests."},
+    {"id": "compliance_regulation", "accept": 110, "refuse": 45, "coverage": "Corporate, tax, competition, data protection, technology, finance, healthcare, labour, and sectoral regulation."},
+    {"id": "rights_disputes", "accept": 125, "refuse": 25, "coverage": "Property, family, employment, consumer, IP, constitutional rights, disputes, remedies, and legal-adjacent fact patterns in ordinary language."},
+    {"id": "document_evidence", "accept": 125, "refuse": 45, "coverage": "Legal and ordinary documents, evidence and chronology, procurement, invoices, screenshots, policy documents, and irrelevant filenames."},
+    {"id": "missing_context", "accept": 100, "refuse": 10, "coverage": "Unidentified provision, missing referent, uploads without a task, empty or failed extraction, and clearly unrelated requests despite missing details."},
+    {"id": "followups", "accept": 115, "refuse": 35, "coverage": "Option selection, yes or no following an assistant question, contextual pronouns, continuation, new unrelated work, and active-document resolution."},
+    {"id": "jurisdiction", "accept": 95, "refuse": 95, "coverage": "Indian state and central questions, unstated jurisdiction, comparison anchored in Indian legal work, foreign-only work, and independent foreign tasks."},
+    {"id": "conversation_product", "accept": 110, "refuse": 75, "coverage": "First and repeat greetings, thanks, functional check-ins, product capabilities, farewells, general social chat, and companionship."},
+    {"id": "public_people_news", "accept": 80, "refuse": 65, "coverage": "Public figures and organisations in proceedings, identity disambiguation, political or sports law, biography, gossip, polling, and statistics."},
+    {"id": "coding_technical", "accept": 55, "refuse": 75, "coverage": "Legal analysis of code, data and software contracts alongside independent programming, debugging, SQL, infrastructure, and related task contrasts."},
+    {"id": "off_topic", "accept": 15, "refuse": 85, "coverage": "Travel, cooking, science, medicine, investing, sports, general history, homework, entertainment, and legal-adjacent counterparts."},
+    {"id": "mixed_operations", "accept": 35, "refuse": 115, "coverage": "Independent unrelated work alongside legal work, multiple legal operations, incidental courtesy, and non-legal material used as evidence."},
+    {"id": "identity_internal", "accept": 40, "refuse": 85, "coverage": "Direct public identity and capability questions, requests for hidden policy or implementation, and mentioned or quoted identities."},
+    {"id": "privacy", "accept": 35, "refuse": 60, "coverage": "Requests to recognise, profile, or enumerate memories about the requester alongside legal status, case context, and legally relevant personal facts."},
+    {"id": "embedded_instructions", "accept": 50, "refuse": 60, "coverage": "Untrusted role claims and document text, legal operations involving quoted instruction-like evidence, and direct protected-information requests."},
+    {"id": "transformations", "accept": 45, "refuse": 60, "coverage": "Translation, summaries, redaction, tables, JSON, editing, roleplay, misspellings, and occasional code-mixed evaluations with matched intents."}
+  ]
+}

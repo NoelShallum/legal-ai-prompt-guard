@@ -1,0 +1,2206 @@
+{
+  "model": "hashed-linear-int4",
+  "selected": {
+    "width": 16384,
+    "c": 24.0
+  },
+  "trials": [
+    {
+      "gate_accuracy": 0.9083333333333333,
+      "route_macro_f1": 0.6984102955046351,
+      "width": 16384,
+      "c": 24.0,
+      "fit_seconds": 7.185538268997334
+    }
+  ],
+  "training_labels": {
+    "confirmed": 1686,
+    "low_confidence": 10,
+    "disagreement": 90
+  },
+  "training_rows": 1686,
+  "temperature": 0.8768596866873268,
+  "artifact_bytes": 24648,
+  "profiles": {
+    "india_legal": {
+      "dev": {
+        "n": 240,
+        "gate_accuracy": 0.9125,
+        "refuse_precision": 0.9081632653061225,
+        "refuse_recall": 0.8811881188118812,
+        "refuse_average_precision": 0.9687422957318952,
+        "false_accept": {
+          "n": 12,
+          "total": 101,
+          "rate": 0.1188118811881188,
+          "wilson_95": [
+            0.06928719446185275,
+            0.19627052606080833
+          ]
+        },
+        "false_refuse": {
+          "n": 9,
+          "total": 139,
+          "rate": 0.06474820143884892,
+          "wilson_95": [
+            0.034435015360151706,
+            0.11847198377734008
+          ]
+        },
+        "modeled_error_by_accept_prevalence": {
+          "0.5": 0.09178004131348386,
+          "0.75": 0.0782641213761664,
+          "0.9": 0.0701545694137759,
+          "0.95": 0.06745138542631242
+        },
+        "gate_brier": 0.05824022367596626,
+        "route_macro_f1": 0.7104613611598857,
+        "route_confusion": {
+          "legal": {
+            "legal": 115,
+            "unrelated": 2,
+            "mixed": 1
+          },
+          "file_error": {
+            "file_error": 2
+          },
+          "unrelated": {
+            "unrelated": 36,
+            "legal": 3,
+            "mixed": 1
+          },
+          "public_identity": {
+            "legal": 1,
+            "public_identity": 2
+          },
+          "protected": {
+            "protected": 6,
+            "unrelated": 2
+          },
+          "foreign": {
+            "foreign": 5
+          },
+          "mixed": {
+            "mixed": 21,
+            "legal": 8
+          },
+          "greeting": {
+            "unrelated": 2
+          },
+          "social": {
+            "social": 3,
+            "unrelated": 4,
+            "private": 1
+          },
+          "mixed_jurisdiction": {
+            "mixed_jurisdiction": 3,
+            "mixed": 1,
+            "legal": 1
+          },
+          "adjacent": {
+            "adjacent": 1,
+            "mixed": 1,
+            "unrelated": 1
+          },
+          "private": {
+            "private": 5,
+            "unrelated": 1
+          },
+          "clarify": {
+            "legal": 3,
+            "clarify": 2,
+            "unrelated": 1,
+            "greeting": 1
+          },
+          "product": {
+            "product": 1
+          },
+          "courtesy": {
+            "social": 2,
+            "courtesy": 1
+          }
+        },
+        "contrast_groups": 62,
+        "contrast_group_accuracy": 0.7741935483870968,
+        "thresholds": {
+          "accept": 0.89,
+          "refuse": 0.92,
+          "action": 0.78
+        },
+        "selective": {
+          "actual_accept": 139,
+          "covered": 166,
+          "auto_accept": 116,
+          "actual_refuse": 101,
+          "auto_refuse": 50,
+          "review": 74,
+          "wrong_action": 4,
+          "false_accept": 1,
+          "coverage": 0.6916666666666667,
+          "selective_action_error_rate": 0.024096385542168676,
+          "auto_false_accept_95": [
+            0.0017499112489682972,
+            0.05396715799445308
+          ],
+          "auto_false_refuse_95": [
+            0.0,
+            0.02689316429844098
+          ]
+        },
+        "themes": {
+          "rights_disputes": {
+            "n": 19,
+            "false_accept": 0,
+            "false_refuse": 2,
+            "wrong_action": 2,
+            "auto": 16,
+            "auto_wrong_action": 0
+          },
+          "missing_context": {
+            "n": 14,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 4,
+            "auto": 11,
+            "auto_wrong_action": 2
+          },
+          "off_topic": {
+            "n": 10,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 8,
+            "auto_wrong_action": 0
+          },
+          "transformations": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "identity_internal": {
+            "n": 12,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 3,
+            "auto": 2,
+            "auto_wrong_action": 0
+          },
+          "followups": {
+            "n": 18,
+            "false_accept": 1,
+            "false_refuse": 1,
+            "wrong_action": 3,
+            "auto": 11,
+            "auto_wrong_action": 0
+          },
+          "jurisdiction": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 1,
+            "auto": 8,
+            "auto_wrong_action": 0
+          },
+          "authority_research": {
+            "n": 15,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 14,
+            "auto_wrong_action": 1
+          },
+          "coding_technical": {
+            "n": 12,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 9,
+            "auto_wrong_action": 0
+          },
+          "mixed_operations": {
+            "n": 15,
+            "false_accept": 3,
+            "false_refuse": 0,
+            "wrong_action": 3,
+            "auto": 8,
+            "auto_wrong_action": 0
+          },
+          "conversation_product": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 3,
+            "wrong_action": 8,
+            "auto": 5,
+            "auto_wrong_action": 1
+          },
+          "drafting_review": {
+            "n": 13,
+            "false_accept": 2,
+            "false_refuse": 0,
+            "wrong_action": 2,
+            "auto": 10,
+            "auto_wrong_action": 0
+          },
+          "public_people_news": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 1,
+            "auto": 8,
+            "auto_wrong_action": 0
+          },
+          "compliance_regulation": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 15,
+            "auto_wrong_action": 0
+          },
+          "document_evidence": {
+            "n": 13,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 12,
+            "auto_wrong_action": 0
+          },
+          "procedure_deadlines": {
+            "n": 12,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 11,
+            "auto_wrong_action": 0
+          },
+          "embedded_instructions": {
+            "n": 9,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 2,
+            "auto": 7,
+            "auto_wrong_action": 0
+          },
+          "privacy": {
+            "n": 9,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 5,
+            "auto_wrong_action": 0
+          }
+        }
+      },
+      "calibration": {
+        "n": 236,
+        "gate_accuracy": 0.9194915254237288,
+        "refuse_precision": 0.9354838709677419,
+        "refuse_recall": 0.87,
+        "refuse_average_precision": 0.9650229434382495,
+        "false_accept": {
+          "n": 13,
+          "total": 100,
+          "rate": 0.13,
+          "wilson_95": [
+            0.0775716742724062,
+            0.20980351440076173
+          ]
+        },
+        "false_refuse": {
+          "n": 6,
+          "total": 136,
+          "rate": 0.04411764705882353,
+          "wilson_95": [
+            0.02037401701201879,
+            0.09290754450977559
+          ]
+        },
+        "modeled_error_by_accept_prevalence": {
+          "0.5": 0.08705882352941177,
+          "0.75": 0.06558823529411764,
+          "0.9": 0.05270588235294118,
+          "0.95": 0.04841176470588236
+        },
+        "gate_brier": 0.061012789607048035,
+        "route_macro_f1": 0.7641397285327197,
+        "route_confusion": {
+          "unrelated": {
+            "unrelated": 42,
+            "legal": 3
+          },
+          "legal": {
+            "legal": 110,
+            "mixed": 2
+          },
+          "mixed": {
+            "legal": 8,
+            "mixed": 18,
+            "unrelated": 2
+          },
+          "file_error": {
+            "file_error": 2
+          },
+          "protected": {
+            "protected": 7,
+            "public_identity": 1,
+            "private": 1
+          },
+          "mixed_jurisdiction": {
+            "legal": 1,
+            "mixed_jurisdiction": 4
+          },
+          "adjacent": {
+            "adjacent": 1,
+            "unrelated": 1
+          },
+          "courtesy": {
+            "courtesy": 1,
+            "legal": 1
+          },
+          "private": {
+            "private": 4,
+            "protected": 1,
+            "public_identity": 1
+          },
+          "social": {
+            "unrelated": 1,
+            "social": 1
+          },
+          "product": {
+            "legal": 3,
+            "product": 2,
+            "clarify": 1
+          },
+          "foreign": {
+            "foreign": 5
+          },
+          "clarify": {
+            "unrelated": 2,
+            "clarify": 3,
+            "legal": 2
+          },
+          "public_identity": {
+            "public_identity": 3
+          },
+          "greeting": {
+            "greeting": 1,
+            "unrelated": 1
+          }
+        },
+        "contrast_groups": 62,
+        "contrast_group_accuracy": 0.7419354838709677,
+        "thresholds": {
+          "accept": 0.89,
+          "refuse": 0.92,
+          "action": 0.78
+        },
+        "selective": {
+          "actual_refuse": 100,
+          "covered": 174,
+          "auto_refuse": 55,
+          "actual_accept": 136,
+          "auto_accept": 119,
+          "review": 62,
+          "wrong_action": 8,
+          "false_accept": 2,
+          "false_refuse": 1,
+          "coverage": 0.7372881355932204,
+          "selective_action_error_rate": 0.04597701149425287,
+          "auto_false_accept_95": [
+            0.005501967550162523,
+            0.07001179072854186
+          ],
+          "auto_false_refuse_95": [
+            0.0012991560360958686,
+            0.04047285399552064
+          ]
+        },
+        "themes": {
+          "off_topic": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "compliance_regulation": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 13,
+            "auto_wrong_action": 0
+          },
+          "conversation_product": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 5,
+            "auto": 8,
+            "auto_wrong_action": 3
+          },
+          "mixed_operations": {
+            "n": 15,
+            "false_accept": 4,
+            "false_refuse": 0,
+            "wrong_action": 4,
+            "auto": 8,
+            "auto_wrong_action": 1
+          },
+          "rights_disputes": {
+            "n": 18,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 1,
+            "auto": 15,
+            "auto_wrong_action": 0
+          },
+          "procedure_deadlines": {
+            "n": 14,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 14,
+            "auto_wrong_action": 1
+          },
+          "jurisdiction": {
+            "n": 15,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 9,
+            "auto_wrong_action": 0
+          },
+          "missing_context": {
+            "n": 14,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 3,
+            "auto": 11,
+            "auto_wrong_action": 1
+          },
+          "embedded_instructions": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 8,
+            "auto_wrong_action": 0
+          },
+          "authority_research": {
+            "n": 15,
+            "false_accept": 1,
+            "false_refuse": 1,
+            "wrong_action": 2,
+            "auto": 13,
+            "auto_wrong_action": 0
+          },
+          "transformations": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "public_people_news": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 14,
+            "auto_wrong_action": 0
+          },
+          "followups": {
+            "n": 16,
+            "false_accept": 1,
+            "false_refuse": 1,
+            "wrong_action": 3,
+            "auto": 13,
+            "auto_wrong_action": 1
+          },
+          "identity_internal": {
+            "n": 12,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 3,
+            "auto": 5,
+            "auto_wrong_action": 1
+          },
+          "coding_technical": {
+            "n": 12,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 7,
+            "auto_wrong_action": 0
+          },
+          "document_evidence": {
+            "n": 11,
+            "false_accept": 2,
+            "false_refuse": 1,
+            "wrong_action": 3,
+            "auto": 8,
+            "auto_wrong_action": 0
+          },
+          "privacy": {
+            "n": 9,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 2,
+            "auto": 5,
+            "auto_wrong_action": 0
+          },
+          "drafting_review": {
+            "n": 13,
+            "false_accept": 2,
+            "false_refuse": 0,
+            "wrong_action": 2,
+            "auto": 11,
+            "auto_wrong_action": 0
+          }
+        }
+      },
+      "test": {
+        "n": 238,
+        "gate_accuracy": 0.9327731092436975,
+        "refuse_precision": 0.9223300970873787,
+        "refuse_recall": 0.9223300970873787,
+        "refuse_average_precision": 0.982223594956965,
+        "false_accept": {
+          "n": 8,
+          "total": 103,
+          "rate": 0.07766990291262135,
+          "wilson_95": [
+            0.039880356912351256,
+            0.14582900197980625
+          ]
+        },
+        "false_refuse": {
+          "n": 8,
+          "total": 135,
+          "rate": 0.05925925925925926,
+          "wilson_95": [
+            0.0303303609420619,
+            0.1125769449104217
+          ]
+        },
+        "modeled_error_by_accept_prevalence": {
+          "0.5": 0.06846458108594031,
+          "0.75": 0.06386192017259978,
+          "0.9": 0.06110032362459547,
+          "0.95": 0.060179791441927366
+        },
+        "gate_brier": 0.050044283270835876,
+        "route_macro_f1": 0.7190407436082022,
+        "route_confusion": {
+          "legal": {
+            "legal": 109,
+            "unrelated": 1
+          },
+          "mixed": {
+            "mixed": 20,
+            "unrelated": 1,
+            "legal": 3
+          },
+          "clarify": {
+            "mixed": 1,
+            "clarify": 5,
+            "unrelated": 2,
+            "legal": 1,
+            "greeting": 1
+          },
+          "unrelated": {
+            "unrelated": 41,
+            "mixed": 2,
+            "legal": 3
+          },
+          "public_identity": {
+            "public_identity": 2
+          },
+          "mixed_jurisdiction": {
+            "mixed": 1,
+            "legal": 1,
+            "mixed_jurisdiction": 3
+          },
+          "protected": {
+            "protected": 10
+          },
+          "foreign": {
+            "foreign": 5,
+            "legal": 1
+          },
+          "adjacent": {
+            "legal": 1,
+            "unrelated": 2
+          },
+          "social": {
+            "social": 3,
+            "unrelated": 2,
+            "private": 1
+          },
+          "greeting": {
+            "unrelated": 1,
+            "public_identity": 1
+          },
+          "courtesy": {
+            "unrelated": 1,
+            "courtesy": 2
+          },
+          "product": {
+            "product": 2,
+            "legal": 1
+          },
+          "file_error": {
+            "file_error": 2
+          },
+          "private": {
+            "private": 5,
+            "social": 1
+          }
+        },
+        "contrast_groups": 66,
+        "contrast_group_accuracy": 0.8181818181818182,
+        "thresholds": {
+          "accept": 0.89,
+          "refuse": 0.92,
+          "action": 0.78
+        },
+        "selective": {
+          "actual_accept": 135,
+          "covered": 176,
+          "auto_accept": 116,
+          "review": 62,
+          "actual_refuse": 103,
+          "auto_refuse": 60,
+          "wrong_action": 6,
+          "false_accept": 3,
+          "coverage": 0.7394957983193278,
+          "selective_action_error_rate": 0.03409090909090909,
+          "auto_false_accept_95": [
+            0.009954367816644827,
+            0.08215836566081815
+          ],
+          "auto_false_refuse_95": [
+            0.0,
+            0.027667952017523423
+          ]
+        },
+        "themes": {
+          "document_evidence": {
+            "n": 13,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 10,
+            "auto_wrong_action": 0
+          },
+          "identity_internal": {
+            "n": 11,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 5,
+            "auto_wrong_action": 1
+          },
+          "mixed_operations": {
+            "n": 15,
+            "false_accept": 1,
+            "false_refuse": 1,
+            "wrong_action": 2,
+            "auto": 11,
+            "auto_wrong_action": 1
+          },
+          "drafting_review": {
+            "n": 15,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 15,
+            "auto_wrong_action": 1
+          },
+          "procedure_deadlines": {
+            "n": 14,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 13,
+            "auto_wrong_action": 0
+          },
+          "missing_context": {
+            "n": 14,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 3,
+            "auto": 11,
+            "auto_wrong_action": 1
+          },
+          "coding_technical": {
+            "n": 12,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 9,
+            "auto_wrong_action": 0
+          },
+          "followups": {
+            "n": 16,
+            "false_accept": 1,
+            "false_refuse": 2,
+            "wrong_action": 3,
+            "auto": 12,
+            "auto_wrong_action": 0
+          },
+          "authority_research": {
+            "n": 15,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 13,
+            "auto_wrong_action": 1
+          },
+          "conversation_product": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 2,
+            "wrong_action": 6,
+            "auto": 5,
+            "auto_wrong_action": 1
+          },
+          "rights_disputes": {
+            "n": 16,
+            "false_accept": 0,
+            "false_refuse": 2,
+            "wrong_action": 2,
+            "auto": 10,
+            "auto_wrong_action": 0
+          },
+          "compliance_regulation": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 13,
+            "auto_wrong_action": 0
+          },
+          "jurisdiction": {
+            "n": 15,
+            "false_accept": 2,
+            "false_refuse": 0,
+            "wrong_action": 2,
+            "auto": 10,
+            "auto_wrong_action": 0
+          },
+          "transformations": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "embedded_instructions": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 9,
+            "auto_wrong_action": 0
+          },
+          "public_people_news": {
+            "n": 15,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 14,
+            "auto_wrong_action": 0
+          },
+          "off_topic": {
+            "n": 10,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "privacy": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 4,
+            "auto_wrong_action": 0
+          }
+        }
+      },
+      "challenge": {
+        "n": 138,
+        "gate_accuracy": 0.8768115942028986,
+        "refuse_precision": 0.8714285714285714,
+        "refuse_recall": 0.8840579710144928,
+        "refuse_average_precision": 0.9694860757782778,
+        "false_accept": {
+          "n": 8,
+          "total": 69,
+          "rate": 0.11594202898550725,
+          "wilson_95": [
+            0.059934981421762665,
+            0.21245740530315899
+          ]
+        },
+        "false_refuse": {
+          "n": 9,
+          "total": 69,
+          "rate": 0.13043478260869565,
+          "wilson_95": [
+            0.0701662783960361,
+            0.22968299939586967
+          ]
+        },
+        "modeled_error_by_accept_prevalence": {
+          "0.5": 0.12318840579710144,
+          "0.75": 0.12681159420289853,
+          "0.9": 0.1289855072463768,
+          "0.95": 0.12971014492753624
+        },
+        "gate_brier": 0.07206333428621292,
+        "route_macro_f1": 0.6831888922795238,
+        "route_confusion": {
+          "adjacent": {
+            "adjacent": 1,
+            "unrelated": 2,
+            "product": 1
+          },
+          "unrelated": {
+            "unrelated": 34,
+            "legal": 6,
+            "mixed": 1
+          },
+          "legal": {
+            "legal": 48,
+            "mixed": 2,
+            "unrelated": 3
+          },
+          "mixed": {
+            "mixed": 7,
+            "unrelated": 4
+          },
+          "clarify": {
+            "unrelated": 2,
+            "legal": 2
+          },
+          "file_error": {
+            "legal": 2
+          },
+          "mixed_jurisdiction": {
+            "mixed_jurisdiction": 2
+          },
+          "foreign": {
+            "foreign": 3,
+            "legal": 1,
+            "unrelated": 1
+          },
+          "social": {
+            "social": 3
+          },
+          "courtesy": {
+            "courtesy": 1
+          },
+          "product": {
+            "product": 2
+          },
+          "greeting": {
+            "legal": 1
+          },
+          "public_identity": {
+            "public_identity": 2
+          },
+          "protected": {
+            "protected": 4
+          },
+          "private": {
+            "private": 3
+          }
+        },
+        "contrast_groups": 63,
+        "contrast_group_accuracy": 0.7301587301587301,
+        "thresholds": {
+          "accept": 0.89,
+          "refuse": 0.92,
+          "action": 0.78
+        },
+        "selective": {
+          "actual_accept": 69,
+          "covered": 90,
+          "auto_accept": 50,
+          "actual_refuse": 69,
+          "auto_refuse": 40,
+          "review": 48,
+          "wrong_action": 3,
+          "false_accept": 1,
+          "coverage": 0.6521739130434783,
+          "selective_action_error_rate": 0.03333333333333333,
+          "auto_false_accept_95": [
+            0.0025629246445885642,
+            0.0776312246114445
+          ],
+          "auto_false_refuse_95": [
+            0.0,
+            0.05273725818904898
+          ]
+        },
+        "themes": {
+          "rights_disputes": {
+            "n": 10,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 1,
+            "auto": 7,
+            "auto_wrong_action": 0
+          },
+          "authority_research": {
+            "n": 6,
+            "false_accept": 0,
+            "false_refuse": 2,
+            "wrong_action": 2,
+            "auto": 4,
+            "auto_wrong_action": 0
+          },
+          "procedure_deadlines": {
+            "n": 6,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 4,
+            "auto_wrong_action": 0
+          },
+          "drafting_review": {
+            "n": 6,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "compliance_regulation": {
+            "n": 6,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 5,
+            "auto_wrong_action": 0
+          },
+          "document_evidence": {
+            "n": 6,
+            "false_accept": 2,
+            "false_refuse": 0,
+            "wrong_action": 2,
+            "auto": 4,
+            "auto_wrong_action": 0
+          },
+          "missing_context": {
+            "n": 11,
+            "false_accept": 1,
+            "false_refuse": 1,
+            "wrong_action": 7,
+            "auto": 5,
+            "auto_wrong_action": 2
+          },
+          "followups": {
+            "n": 10,
+            "false_accept": 2,
+            "false_refuse": 2,
+            "wrong_action": 4,
+            "auto": 3,
+            "auto_wrong_action": 1
+          },
+          "jurisdiction": {
+            "n": 12,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "conversation_product": {
+            "n": 8,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 4,
+            "auto_wrong_action": 0
+          },
+          "public_people_news": {
+            "n": 6,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 5,
+            "auto_wrong_action": 0
+          },
+          "coding_technical": {
+            "n": 7,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 7,
+            "auto_wrong_action": 0
+          },
+          "off_topic": {
+            "n": 6,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 4,
+            "auto_wrong_action": 0
+          },
+          "mixed_operations": {
+            "n": 8,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 1,
+            "auto": 5,
+            "auto_wrong_action": 0
+          },
+          "identity_internal": {
+            "n": 7,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 7,
+            "auto_wrong_action": 0
+          },
+          "privacy": {
+            "n": 6,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "embedded_instructions": {
+            "n": 6,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 2,
+            "auto_wrong_action": 0
+          },
+          "transformations": {
+            "n": 11,
+            "false_accept": 0,
+            "false_refuse": 2,
+            "wrong_action": 2,
+            "auto": 6,
+            "auto_wrong_action": 0
+          }
+        }
+      }
+    },
+    "general_legal": {
+      "dev": {
+        "n": 240,
+        "gate_accuracy": 0.9083333333333333,
+        "refuse_precision": 0.8876404494382022,
+        "refuse_recall": 0.8681318681318682,
+        "refuse_average_precision": 0.961139643460792,
+        "false_accept": {
+          "n": 12,
+          "total": 91,
+          "rate": 0.13186813186813187,
+          "wilson_95": [
+            0.0770710751453858,
+            0.21648681785719476
+          ]
+        },
+        "false_refuse": {
+          "n": 10,
+          "total": 149,
+          "rate": 0.06711409395973154,
+          "wilson_95": [
+            0.03686034060709528,
+            0.11912782519982457
+          ]
+        },
+        "modeled_error_by_accept_prevalence": {
+          "0.5": 0.0994911129139317,
+          "0.75": 0.08330260343683163,
+          "0.9": 0.07358949775057158,
+          "0.95": 0.07035179585515156
+        },
+        "gate_brier": 0.060556333512067795,
+        "route_macro_f1": 0.7104613611598857,
+        "route_confusion": {
+          "legal": {
+            "legal": 115,
+            "unrelated": 2,
+            "mixed": 1
+          },
+          "file_error": {
+            "file_error": 2
+          },
+          "unrelated": {
+            "unrelated": 36,
+            "legal": 3,
+            "mixed": 1
+          },
+          "public_identity": {
+            "legal": 1,
+            "public_identity": 2
+          },
+          "protected": {
+            "protected": 6,
+            "unrelated": 2
+          },
+          "foreign": {
+            "foreign": 5
+          },
+          "mixed": {
+            "mixed": 21,
+            "legal": 8
+          },
+          "greeting": {
+            "unrelated": 2
+          },
+          "social": {
+            "social": 3,
+            "unrelated": 4,
+            "private": 1
+          },
+          "mixed_jurisdiction": {
+            "mixed_jurisdiction": 3,
+            "mixed": 1,
+            "legal": 1
+          },
+          "adjacent": {
+            "adjacent": 1,
+            "mixed": 1,
+            "unrelated": 1
+          },
+          "private": {
+            "private": 5,
+            "unrelated": 1
+          },
+          "clarify": {
+            "legal": 3,
+            "clarify": 2,
+            "unrelated": 1,
+            "greeting": 1
+          },
+          "product": {
+            "product": 1
+          },
+          "courtesy": {
+            "social": 2,
+            "courtesy": 1
+          }
+        },
+        "contrast_groups": 57,
+        "contrast_group_accuracy": 0.7719298245614035,
+        "thresholds": {
+          "accept": 0.89,
+          "refuse": 0.92,
+          "action": 0.5
+        },
+        "selective": {
+          "actual_accept": 149,
+          "covered": 173,
+          "auto_accept": 122,
+          "actual_refuse": 91,
+          "auto_refuse": 51,
+          "review": 67,
+          "wrong_action": 7,
+          "false_accept": 1,
+          "coverage": 0.7208333333333333,
+          "selective_action_error_rate": 0.04046242774566474,
+          "auto_false_accept_95": [
+            0.0019424713318492957,
+            0.05964935668650398
+          ],
+          "auto_false_refuse_95": [
+            0.0,
+            0.025133617870008194
+          ]
+        },
+        "themes": {
+          "rights_disputes": {
+            "n": 19,
+            "false_accept": 0,
+            "false_refuse": 2,
+            "wrong_action": 2,
+            "auto": 16,
+            "auto_wrong_action": 0
+          },
+          "missing_context": {
+            "n": 14,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 4,
+            "auto": 11,
+            "auto_wrong_action": 2
+          },
+          "off_topic": {
+            "n": 10,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 8,
+            "auto_wrong_action": 0
+          },
+          "transformations": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "identity_internal": {
+            "n": 12,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 3,
+            "auto": 3,
+            "auto_wrong_action": 1
+          },
+          "followups": {
+            "n": 18,
+            "false_accept": 1,
+            "false_refuse": 1,
+            "wrong_action": 3,
+            "auto": 12,
+            "auto_wrong_action": 0
+          },
+          "jurisdiction": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 2,
+            "wrong_action": 2,
+            "auto": 9,
+            "auto_wrong_action": 0
+          },
+          "authority_research": {
+            "n": 15,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 14,
+            "auto_wrong_action": 1
+          },
+          "coding_technical": {
+            "n": 12,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 9,
+            "auto_wrong_action": 0
+          },
+          "mixed_operations": {
+            "n": 15,
+            "false_accept": 3,
+            "false_refuse": 0,
+            "wrong_action": 3,
+            "auto": 8,
+            "auto_wrong_action": 0
+          },
+          "conversation_product": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 3,
+            "wrong_action": 8,
+            "auto": 7,
+            "auto_wrong_action": 2
+          },
+          "drafting_review": {
+            "n": 13,
+            "false_accept": 2,
+            "false_refuse": 0,
+            "wrong_action": 2,
+            "auto": 10,
+            "auto_wrong_action": 0
+          },
+          "public_people_news": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 1,
+            "auto": 8,
+            "auto_wrong_action": 0
+          },
+          "compliance_regulation": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 15,
+            "auto_wrong_action": 0
+          },
+          "document_evidence": {
+            "n": 13,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 12,
+            "auto_wrong_action": 0
+          },
+          "procedure_deadlines": {
+            "n": 12,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 11,
+            "auto_wrong_action": 0
+          },
+          "embedded_instructions": {
+            "n": 9,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 2,
+            "auto": 8,
+            "auto_wrong_action": 1
+          },
+          "privacy": {
+            "n": 9,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 6,
+            "auto_wrong_action": 0
+          }
+        }
+      },
+      "calibration": {
+        "n": 236,
+        "gate_accuracy": 0.923728813559322,
+        "refuse_precision": 0.9285714285714286,
+        "refuse_recall": 0.8666666666666667,
+        "refuse_average_precision": 0.9619961427025266,
+        "false_accept": {
+          "n": 12,
+          "total": 90,
+          "rate": 0.13333333333333333,
+          "wilson_95": [
+            0.07794682040686426,
+            0.21873930500697372
+          ]
+        },
+        "false_refuse": {
+          "n": 6,
+          "total": 146,
+          "rate": 0.0410958904109589,
+          "wilson_95": [
+            0.018968518304137323,
+            0.08675294854069909
+          ]
+        },
+        "modeled_error_by_accept_prevalence": {
+          "0.5": 0.08721461187214612,
+          "0.75": 0.06415525114155252,
+          "0.9": 0.05031963470319634,
+          "0.95": 0.04570776255707763
+        },
+        "gate_brier": 0.05922457203269005,
+        "route_macro_f1": 0.7641397285327197,
+        "route_confusion": {
+          "unrelated": {
+            "unrelated": 42,
+            "legal": 3
+          },
+          "legal": {
+            "legal": 110,
+            "mixed": 2
+          },
+          "mixed": {
+            "legal": 8,
+            "mixed": 18,
+            "unrelated": 2
+          },
+          "file_error": {
+            "file_error": 2
+          },
+          "protected": {
+            "protected": 7,
+            "public_identity": 1,
+            "private": 1
+          },
+          "mixed_jurisdiction": {
+            "legal": 1,
+            "mixed_jurisdiction": 4
+          },
+          "adjacent": {
+            "adjacent": 1,
+            "unrelated": 1
+          },
+          "courtesy": {
+            "courtesy": 1,
+            "legal": 1
+          },
+          "private": {
+            "private": 4,
+            "protected": 1,
+            "public_identity": 1
+          },
+          "social": {
+            "unrelated": 1,
+            "social": 1
+          },
+          "product": {
+            "legal": 3,
+            "product": 2,
+            "clarify": 1
+          },
+          "foreign": {
+            "foreign": 5
+          },
+          "clarify": {
+            "unrelated": 2,
+            "clarify": 3,
+            "legal": 2
+          },
+          "public_identity": {
+            "public_identity": 3
+          },
+          "greeting": {
+            "greeting": 1,
+            "unrelated": 1
+          }
+        },
+        "contrast_groups": 57,
+        "contrast_group_accuracy": 0.7368421052631579,
+        "thresholds": {
+          "accept": 0.89,
+          "refuse": 0.92,
+          "action": 0.5
+        },
+        "selective": {
+          "actual_refuse": 90,
+          "covered": 180,
+          "auto_refuse": 48,
+          "actual_accept": 146,
+          "auto_accept": 132,
+          "review": 56,
+          "wrong_action": 9,
+          "false_accept": 2,
+          "false_refuse": 1,
+          "coverage": 0.7627118644067796,
+          "selective_action_error_rate": 0.05,
+          "auto_false_accept_95": [
+            0.0061154419863254025,
+            0.07744526688625145
+          ],
+          "auto_false_refuse_95": [
+            0.0012100972425709913,
+            0.037774165635462174
+          ]
+        },
+        "themes": {
+          "off_topic": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 5,
+            "auto_wrong_action": 0
+          },
+          "compliance_regulation": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 12,
+            "auto_wrong_action": 0
+          },
+          "conversation_product": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 5,
+            "auto": 10,
+            "auto_wrong_action": 4
+          },
+          "mixed_operations": {
+            "n": 15,
+            "false_accept": 4,
+            "false_refuse": 0,
+            "wrong_action": 4,
+            "auto": 8,
+            "auto_wrong_action": 1
+          },
+          "rights_disputes": {
+            "n": 18,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 1,
+            "auto": 16,
+            "auto_wrong_action": 0
+          },
+          "procedure_deadlines": {
+            "n": 14,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 14,
+            "auto_wrong_action": 1
+          },
+          "jurisdiction": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 15,
+            "auto_wrong_action": 0
+          },
+          "missing_context": {
+            "n": 14,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 3,
+            "auto": 11,
+            "auto_wrong_action": 1
+          },
+          "embedded_instructions": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 8,
+            "auto_wrong_action": 0
+          },
+          "authority_research": {
+            "n": 15,
+            "false_accept": 1,
+            "false_refuse": 1,
+            "wrong_action": 2,
+            "auto": 13,
+            "auto_wrong_action": 0
+          },
+          "transformations": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 4,
+            "auto_wrong_action": 0
+          },
+          "public_people_news": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 14,
+            "auto_wrong_action": 0
+          },
+          "followups": {
+            "n": 16,
+            "false_accept": 1,
+            "false_refuse": 1,
+            "wrong_action": 3,
+            "auto": 13,
+            "auto_wrong_action": 1
+          },
+          "identity_internal": {
+            "n": 12,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 3,
+            "auto": 5,
+            "auto_wrong_action": 1
+          },
+          "coding_technical": {
+            "n": 12,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 7,
+            "auto_wrong_action": 0
+          },
+          "document_evidence": {
+            "n": 11,
+            "false_accept": 2,
+            "false_refuse": 1,
+            "wrong_action": 3,
+            "auto": 8,
+            "auto_wrong_action": 0
+          },
+          "privacy": {
+            "n": 9,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 2,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "drafting_review": {
+            "n": 13,
+            "false_accept": 2,
+            "false_refuse": 0,
+            "wrong_action": 2,
+            "auto": 11,
+            "auto_wrong_action": 0
+          }
+        }
+      },
+      "test": {
+        "n": 238,
+        "gate_accuracy": 0.9411764705882353,
+        "refuse_precision": 0.9148936170212766,
+        "refuse_recall": 0.9347826086956522,
+        "refuse_average_precision": 0.9783093796334159,
+        "false_accept": {
+          "n": 6,
+          "total": 92,
+          "rate": 0.06521739130434782,
+          "wilson_95": [
+            0.030230203323134704,
+            0.13505796127305625
+          ]
+        },
+        "false_refuse": {
+          "n": 8,
+          "total": 146,
+          "rate": 0.0547945205479452,
+          "wilson_95": [
+            0.028023676605756595,
+            0.1043926718258011
+          ]
+        },
+        "modeled_error_by_accept_prevalence": {
+          "0.5": 0.06000595592614651,
+          "0.75": 0.05740023823704586,
+          "0.9": 0.05583680762358546,
+          "0.95": 0.05531566408576533
+        },
+        "gate_brier": 0.04772917926311493,
+        "route_macro_f1": 0.7190407436082022,
+        "route_confusion": {
+          "legal": {
+            "legal": 109,
+            "unrelated": 1
+          },
+          "mixed": {
+            "mixed": 20,
+            "unrelated": 1,
+            "legal": 3
+          },
+          "clarify": {
+            "mixed": 1,
+            "clarify": 5,
+            "unrelated": 2,
+            "legal": 1,
+            "greeting": 1
+          },
+          "unrelated": {
+            "unrelated": 41,
+            "mixed": 2,
+            "legal": 3
+          },
+          "public_identity": {
+            "public_identity": 2
+          },
+          "mixed_jurisdiction": {
+            "mixed": 1,
+            "legal": 1,
+            "mixed_jurisdiction": 3
+          },
+          "protected": {
+            "protected": 10
+          },
+          "foreign": {
+            "foreign": 5,
+            "legal": 1
+          },
+          "adjacent": {
+            "legal": 1,
+            "unrelated": 2
+          },
+          "social": {
+            "social": 3,
+            "unrelated": 2,
+            "private": 1
+          },
+          "greeting": {
+            "unrelated": 1,
+            "public_identity": 1
+          },
+          "courtesy": {
+            "unrelated": 1,
+            "courtesy": 2
+          },
+          "product": {
+            "product": 2,
+            "legal": 1
+          },
+          "file_error": {
+            "file_error": 2
+          },
+          "private": {
+            "private": 5,
+            "social": 1
+          }
+        },
+        "contrast_groups": 60,
+        "contrast_group_accuracy": 0.85,
+        "thresholds": {
+          "accept": 0.89,
+          "refuse": 0.92,
+          "action": 0.5
+        },
+        "selective": {
+          "actual_accept": 146,
+          "covered": 176,
+          "auto_accept": 126,
+          "review": 62,
+          "actual_refuse": 92,
+          "auto_refuse": 50,
+          "wrong_action": 7,
+          "false_accept": 4,
+          "coverage": 0.7394957983193278,
+          "selective_action_error_rate": 0.03977272727272727,
+          "auto_false_accept_95": [
+            0.017035716273014104,
+            0.10651685655298641
+          ],
+          "auto_false_refuse_95": [
+            0.0,
+            0.025636822084672516
+          ]
+        },
+        "themes": {
+          "document_evidence": {
+            "n": 13,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 10,
+            "auto_wrong_action": 0
+          },
+          "identity_internal": {
+            "n": 11,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 6,
+            "auto_wrong_action": 1
+          },
+          "mixed_operations": {
+            "n": 15,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 8,
+            "auto_wrong_action": 1
+          },
+          "drafting_review": {
+            "n": 15,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 14,
+            "auto_wrong_action": 1
+          },
+          "procedure_deadlines": {
+            "n": 14,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 13,
+            "auto_wrong_action": 0
+          },
+          "missing_context": {
+            "n": 14,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 3,
+            "auto": 11,
+            "auto_wrong_action": 1
+          },
+          "coding_technical": {
+            "n": 12,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 10,
+            "auto_wrong_action": 1
+          },
+          "followups": {
+            "n": 16,
+            "false_accept": 1,
+            "false_refuse": 2,
+            "wrong_action": 3,
+            "auto": 12,
+            "auto_wrong_action": 0
+          },
+          "authority_research": {
+            "n": 15,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 13,
+            "auto_wrong_action": 1
+          },
+          "conversation_product": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 2,
+            "wrong_action": 6,
+            "auto": 5,
+            "auto_wrong_action": 1
+          },
+          "rights_disputes": {
+            "n": 16,
+            "false_accept": 0,
+            "false_refuse": 2,
+            "wrong_action": 2,
+            "auto": 11,
+            "auto_wrong_action": 0
+          },
+          "compliance_regulation": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 12,
+            "auto_wrong_action": 0
+          },
+          "jurisdiction": {
+            "n": 15,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 1,
+            "auto": 12,
+            "auto_wrong_action": 0
+          },
+          "transformations": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "embedded_instructions": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 8,
+            "auto_wrong_action": 0
+          },
+          "public_people_news": {
+            "n": 15,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 14,
+            "auto_wrong_action": 0
+          },
+          "off_topic": {
+            "n": 10,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "privacy": {
+            "n": 9,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 5,
+            "auto_wrong_action": 0
+          }
+        }
+      },
+      "challenge": {
+        "n": 138,
+        "gate_accuracy": 0.8840579710144928,
+        "refuse_precision": 0.859375,
+        "refuse_recall": 0.8870967741935484,
+        "refuse_average_precision": 0.9714478651586634,
+        "false_accept": {
+          "n": 7,
+          "total": 62,
+          "rate": 0.11290322580645161,
+          "wilson_95": [
+            0.05577863529400075,
+            0.21519742052641433
+          ]
+        },
+        "false_refuse": {
+          "n": 9,
+          "total": 76,
+          "rate": 0.11842105263157894,
+          "wilson_95": [
+            0.0635681900417917,
+            0.20999217750791638
+          ]
+        },
+        "modeled_error_by_accept_prevalence": {
+          "0.5": 0.11566213921901528,
+          "0.75": 0.11704159592529711,
+          "0.9": 0.11786926994906621,
+          "0.95": 0.11814516129032257
+        },
+        "gate_brier": 0.06766941398382187,
+        "route_macro_f1": 0.6831888922795238,
+        "route_confusion": {
+          "adjacent": {
+            "adjacent": 1,
+            "unrelated": 2,
+            "product": 1
+          },
+          "unrelated": {
+            "unrelated": 34,
+            "legal": 6,
+            "mixed": 1
+          },
+          "legal": {
+            "legal": 48,
+            "mixed": 2,
+            "unrelated": 3
+          },
+          "mixed": {
+            "mixed": 7,
+            "unrelated": 4
+          },
+          "clarify": {
+            "unrelated": 2,
+            "legal": 2
+          },
+          "file_error": {
+            "legal": 2
+          },
+          "mixed_jurisdiction": {
+            "mixed_jurisdiction": 2
+          },
+          "foreign": {
+            "foreign": 3,
+            "legal": 1,
+            "unrelated": 1
+          },
+          "social": {
+            "social": 3
+          },
+          "courtesy": {
+            "courtesy": 1
+          },
+          "product": {
+            "product": 2
+          },
+          "greeting": {
+            "legal": 1
+          },
+          "public_identity": {
+            "public_identity": 2
+          },
+          "protected": {
+            "protected": 4
+          },
+          "private": {
+            "private": 3
+          }
+        },
+        "contrast_groups": 58,
+        "contrast_group_accuracy": 0.7413793103448276,
+        "thresholds": {
+          "accept": 0.89,
+          "refuse": 0.92,
+          "action": 0.5
+        },
+        "selective": {
+          "actual_accept": 76,
+          "covered": 91,
+          "auto_accept": 54,
+          "actual_refuse": 62,
+          "auto_refuse": 37,
+          "review": 47,
+          "wrong_action": 4,
+          "false_accept": 1,
+          "coverage": 0.6594202898550725,
+          "selective_action_error_rate": 0.04395604395604396,
+          "auto_false_accept_95": [
+            0.002852867168621931,
+            0.08586720260689688
+          ],
+          "auto_false_refuse_95": [
+            0.0,
+            0.0481135850651348
+          ]
+        },
+        "themes": {
+          "rights_disputes": {
+            "n": 10,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 1,
+            "auto": 7,
+            "auto_wrong_action": 0
+          },
+          "authority_research": {
+            "n": 6,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 1,
+            "auto": 4,
+            "auto_wrong_action": 0
+          },
+          "procedure_deadlines": {
+            "n": 6,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 4,
+            "auto_wrong_action": 0
+          },
+          "drafting_review": {
+            "n": 6,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "compliance_regulation": {
+            "n": 6,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 5,
+            "auto_wrong_action": 0
+          },
+          "document_evidence": {
+            "n": 6,
+            "false_accept": 2,
+            "false_refuse": 0,
+            "wrong_action": 2,
+            "auto": 4,
+            "auto_wrong_action": 0
+          },
+          "missing_context": {
+            "n": 11,
+            "false_accept": 1,
+            "false_refuse": 1,
+            "wrong_action": 7,
+            "auto": 6,
+            "auto_wrong_action": 3
+          },
+          "followups": {
+            "n": 10,
+            "false_accept": 2,
+            "false_refuse": 2,
+            "wrong_action": 4,
+            "auto": 3,
+            "auto_wrong_action": 1
+          },
+          "jurisdiction": {
+            "n": 12,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 1,
+            "auto": 8,
+            "auto_wrong_action": 0
+          },
+          "conversation_product": {
+            "n": 8,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 5,
+            "auto_wrong_action": 0
+          },
+          "public_people_news": {
+            "n": 6,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 5,
+            "auto_wrong_action": 0
+          },
+          "coding_technical": {
+            "n": 7,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 6,
+            "auto_wrong_action": 0
+          },
+          "off_topic": {
+            "n": 6,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 3,
+            "auto_wrong_action": 0
+          },
+          "mixed_operations": {
+            "n": 8,
+            "false_accept": 0,
+            "false_refuse": 1,
+            "wrong_action": 1,
+            "auto": 5,
+            "auto_wrong_action": 0
+          },
+          "identity_internal": {
+            "n": 7,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 7,
+            "auto_wrong_action": 0
+          },
+          "privacy": {
+            "n": 6,
+            "false_accept": 0,
+            "false_refuse": 0,
+            "wrong_action": 0,
+            "auto": 5,
+            "auto_wrong_action": 0
+          },
+          "embedded_instructions": {
+            "n": 6,
+            "false_accept": 1,
+            "false_refuse": 0,
+            "wrong_action": 1,
+            "auto": 2,
+            "auto_wrong_action": 0
+          },
+          "transformations": {
+            "n": 11,
+            "false_accept": 0,
+            "false_refuse": 2,
+            "wrong_action": 2,
+            "auto": 6,
+            "auto_wrong_action": 0
+          }
+        }
+      }
+    }
+  },
+  "quantization": {
+    "selected_bits": 4,
+    "development": {
+      "4": {
+        "gate_accuracy": 0.9125,
+        "route_macro_f1": 0.7104613611598858
+      },
+      "8": {
+        "gate_accuracy": 0.9083333333333333,
+        "route_macro_f1": 0.6993698914642311
+      }
+    },
+    "test_route_agreement": 0.9957983193277311,
+    "test_max_abs_logit_change": 0.9542036056518555
+  },
+  "warm_cpu": {
+    "examples": 120,
+    "p50_ms": 2.145467486116104,
+    "p95_ms": 4.40759949851781,
+    "context_examples": 28,
+    "context_p95_ms": 4.911674189497717
+  }
+}

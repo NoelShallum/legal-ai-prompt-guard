@@ -1,0 +1,432 @@
+{
+  "train": {
+    "rows": 9286,
+    "annotated": 9286,
+    "decision_match": 9057,
+    "route_match": 8417,
+    "low_confidence": 322,
+    "disagreements": [
+      {
+        "authored": "unrelated",
+        "gemini": "mixed",
+        "n": 217
+      },
+      {
+        "authored": "adjacent",
+        "gemini": "legal",
+        "n": 217
+      },
+      {
+        "authored": "legal",
+        "gemini": "mixed",
+        "n": 98
+      },
+      {
+        "authored": "legal",
+        "gemini": "file_error",
+        "n": 55
+      },
+      {
+        "authored": "unrelated",
+        "gemini": "file_error",
+        "n": 49
+      },
+      {
+        "authored": "legal",
+        "gemini": "clarify",
+        "n": 38
+      },
+      {
+        "authored": "legal",
+        "gemini": "mixed_jurisdiction",
+        "n": 35
+      },
+      {
+        "authored": "foreign",
+        "gemini": "mixed_jurisdiction",
+        "n": 16
+      },
+      {
+        "authored": "unrelated",
+        "gemini": "legal",
+        "n": 13
+      },
+      {
+        "authored": "legal",
+        "gemini": "adjacent",
+        "n": 13
+      },
+      {
+        "authored": "clarify",
+        "gemini": "legal",
+        "n": 12
+      },
+      {
+        "authored": "product",
+        "gemini": "clarify",
+        "n": 12
+      },
+      {
+        "authored": "mixed_jurisdiction",
+        "gemini": "mixed",
+        "n": 12
+      },
+      {
+        "authored": "product",
+        "gemini": "legal",
+        "n": 8
+      },
+      {
+        "authored": "protected",
+        "gemini": "public_identity",
+        "n": 7
+      },
+      {
+        "authored": "legal",
+        "gemini": "courtesy",
+        "n": 6
+      },
+      {
+        "authored": "clarify",
+        "gemini": "file_error",
+        "n": 5
+      },
+      {
+        "authored": "courtesy",
+        "gemini": "clarify",
+        "n": 4
+      },
+      {
+        "authored": "social",
+        "gemini": "unrelated",
+        "n": 4
+      },
+      {
+        "authored": "mixed",
+        "gemini": "legal",
+        "n": 3
+      },
+      {
+        "authored": "protected",
+        "gemini": "legal",
+        "n": 3
+      },
+      {
+        "authored": "foreign",
+        "gemini": "legal",
+        "n": 3
+      },
+      {
+        "authored": "courtesy",
+        "gemini": "greeting",
+        "n": 3
+      },
+      {
+        "authored": "social",
+        "gemini": "mixed",
+        "n": 2
+      },
+      {
+        "authored": "unrelated",
+        "gemini": "adjacent",
+        "n": 2
+      },
+      {
+        "authored": "clarify",
+        "gemini": "adjacent",
+        "n": 2
+      },
+      {
+        "authored": "unrelated",
+        "gemini": "public_identity",
+        "n": 2
+      },
+      {
+        "authored": "adjacent",
+        "gemini": "mixed",
+        "n": 2
+      },
+      {
+        "authored": "legal",
+        "gemini": "private",
+        "n": 2
+      },
+      {
+        "authored": "protected",
+        "gemini": "private",
+        "n": 2
+      },
+      {
+        "authored": "protected",
+        "gemini": "mixed",
+        "n": 2
+      },
+      {
+        "authored": "mixed",
+        "gemini": "mixed_jurisdiction",
+        "n": 2
+      },
+      {
+        "authored": "mixed",
+        "gemini": "unrelated",
+        "n": 2
+      },
+      {
+        "authored": "public_identity",
+        "gemini": "unrelated",
+        "n": 2
+      },
+      {
+        "authored": "unrelated",
+        "gemini": "greeting",
+        "n": 1
+      },
+      {
+        "authored": "unrelated",
+        "gemini": "clarify",
+        "n": 1
+      },
+      {
+        "authored": "unrelated",
+        "gemini": "foreign",
+        "n": 1
+      },
+      {
+        "authored": "unrelated",
+        "gemini": "social",
+        "n": 1
+      },
+      {
+        "authored": "mixed_jurisdiction",
+        "gemini": "foreign",
+        "n": 1
+      },
+      {
+        "authored": "clarify",
+        "gemini": "protected",
+        "n": 1
+      },
+      {
+        "authored": "social",
+        "gemini": "private",
+        "n": 1
+      },
+      {
+        "authored": "clarify",
+        "gemini": "public_identity",
+        "n": 1
+      },
+      {
+        "authored": "private",
+        "gemini": "legal",
+        "n": 1
+      },
+      {
+        "authored": "social",
+        "gemini": "legal",
+        "n": 1
+      },
+      {
+        "authored": "protected",
+        "gemini": "product",
+        "n": 1
+      },
+      {
+        "authored": "social",
+        "gemini": "greeting",
+        "n": 1
+      },
+      {
+        "authored": "mixed",
+        "gemini": "clarify",
+        "n": 1
+      },
+      {
+        "authored": "private",
+        "gemini": "mixed",
+        "n": 1
+      }
+    ]
+  },
+  "dev": {
+    "rows": 240,
+    "annotated": 240,
+    "decision_match": 237,
+    "route_match": 225,
+    "low_confidence": 8,
+    "disagreements": [
+      {
+        "authored": "unrelated",
+        "gemini": "mixed",
+        "n": 4
+      },
+      {
+        "authored": "unrelated",
+        "gemini": "legal",
+        "n": 3
+      },
+      {
+        "authored": "social",
+        "gemini": "unrelated",
+        "n": 2
+      },
+      {
+        "authored": "clarify",
+        "gemini": "legal",
+        "n": 1
+      },
+      {
+        "authored": "protected",
+        "gemini": "private",
+        "n": 1
+      },
+      {
+        "authored": "legal",
+        "gemini": "adjacent",
+        "n": 1
+      },
+      {
+        "authored": "legal",
+        "gemini": "clarify",
+        "n": 1
+      },
+      {
+        "authored": "legal",
+        "gemini": "file_error",
+        "n": 1
+      },
+      {
+        "authored": "clarify",
+        "gemini": "file_error",
+        "n": 1
+      }
+    ]
+  },
+  "calibration": {
+    "rows": 236,
+    "annotated": 236,
+    "decision_match": 234,
+    "route_match": 224,
+    "low_confidence": 12,
+    "disagreements": [
+      {
+        "authored": "unrelated",
+        "gemini": "mixed",
+        "n": 3
+      },
+      {
+        "authored": "product",
+        "gemini": "legal",
+        "n": 2
+      },
+      {
+        "authored": "legal",
+        "gemini": "clarify",
+        "n": 1
+      },
+      {
+        "authored": "legal",
+        "gemini": "mixed_jurisdiction",
+        "n": 1
+      },
+      {
+        "authored": "legal",
+        "gemini": "file_error",
+        "n": 1
+      },
+      {
+        "authored": "unrelated",
+        "gemini": "file_error",
+        "n": 1
+      },
+      {
+        "authored": "clarify",
+        "gemini": "legal",
+        "n": 1
+      },
+      {
+        "authored": "legal",
+        "gemini": "courtesy",
+        "n": 1
+      },
+      {
+        "authored": "adjacent",
+        "gemini": "legal",
+        "n": 1
+      }
+    ]
+  },
+  "test": {
+    "rows": 238,
+    "annotated": 238,
+    "decision_match": 237,
+    "route_match": 225,
+    "low_confidence": 6,
+    "disagreements": [
+      {
+        "authored": "legal",
+        "gemini": "clarify",
+        "n": 5
+      },
+      {
+        "authored": "unrelated",
+        "gemini": "mixed",
+        "n": 4
+      },
+      {
+        "authored": "adjacent",
+        "gemini": "legal",
+        "n": 1
+      },
+      {
+        "authored": "legal",
+        "gemini": "mixed_jurisdiction",
+        "n": 1
+      },
+      {
+        "authored": "protected",
+        "gemini": "private",
+        "n": 1
+      },
+      {
+        "authored": "clarify",
+        "gemini": "file_error",
+        "n": 1
+      }
+    ]
+  },
+  "challenge": {
+    "rows": 138,
+    "annotated": 138,
+    "decision_match": 136,
+    "route_match": 127,
+    "low_confidence": 4,
+    "disagreements": [
+      {
+        "authored": "unrelated",
+        "gemini": "mixed",
+        "n": 4
+      },
+      {
+        "authored": "adjacent",
+        "gemini": "legal",
+        "n": 3
+      },
+      {
+        "authored": "unrelated",
+        "gemini": "file_error",
+        "n": 2
+      },
+      {
+        "authored": "clarify",
+        "gemini": "legal",
+        "n": 1
+      },
+      {
+        "authored": "product",
+        "gemini": "clarify",
+        "n": 1
+      }
+    ]
+  }
+}

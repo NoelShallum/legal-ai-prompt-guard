@@ -1,0 +1,514 @@
+{
+  "india_legal": {
+    "dev": {
+      "rows": 240,
+      "counts": {
+        "expected_accept": 139,
+        "legal": 112,
+        "covered_expected_accept": 115,
+        "auto_correct_action": 174,
+        "false_accept": 4,
+        "false_refuse": 7,
+        "review": 51,
+        "review:low_confidence": 51,
+        "expected_refuse": 101,
+        "refuse_scope": 77,
+        "covered_expected_refuse": 74,
+        "auto_wrong_action": 15
+      },
+      "coverage": 0.7875,
+      "covered_action_accuracy": 0.9206349206349206,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.7800056984115677,
+          "modeled_false_refusals_per_1000": 25.179856115107917,
+          "modeled_false_accepts_per_1000": 19.801980198019802
+        },
+        "0.75": {
+          "modeled_coverage": 0.8036719139539854,
+          "modeled_false_refusals_per_1000": 37.76978417266187,
+          "modeled_false_accepts_per_1000": 9.900990099009901
+        },
+        "0.9": {
+          "modeled_coverage": 0.8178716432794358,
+          "modeled_false_refusals_per_1000": 45.32374100719424,
+          "modeled_false_accepts_per_1000": 3.9603960396039595
+        },
+        "0.95": {
+          "modeled_coverage": 0.8226048863879194,
+          "modeled_false_refusals_per_1000": 47.84172661870503,
+          "modeled_false_accepts_per_1000": 1.980198019801982
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.722216459197787,
+          0.8497907725321888
+        ],
+        "covered_wrong_action": [
+          0.04231696168868944,
+          0.12183405146972019
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.09090909090909091
+        ],
+        "false_refuse_among_accepts": [
+          0.02054794520547945,
+          0.08825163398692802
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.303714005392976,
+        "p95": 3.7945089978165902
+      }
+    },
+    "calibration": {
+      "rows": 236,
+      "counts": {
+        "expected_refuse": 100,
+        "refuse_scope": 73,
+        "covered_expected_refuse": 73,
+        "auto_correct_action": 176,
+        "false_accept": 2,
+        "false_refuse": 2,
+        "expected_accept": 136,
+        "legal": 110,
+        "covered_expected_accept": 110,
+        "review": 53,
+        "review:low_confidence": 53,
+        "auto_wrong_action": 7
+      },
+      "coverage": 0.7754237288135594,
+      "covered_action_accuracy": 0.9617486338797814,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.7694117647058824,
+          "modeled_false_refusals_per_1000": 7.352941176470588,
+          "modeled_false_accepts_per_1000": 10.0
+        },
+        "0.75": {
+          "modeled_coverage": 0.7891176470588236,
+          "modeled_false_refusals_per_1000": 11.029411764705882,
+          "modeled_false_accepts_per_1000": 5.0
+        },
+        "0.9": {
+          "modeled_coverage": 0.8009411764705882,
+          "modeled_false_refusals_per_1000": 13.235294117647058,
+          "modeled_false_accepts_per_1000": 1.9999999999999996
+        },
+        "0.95": {
+          "modeled_coverage": 0.8048823529411764,
+          "modeled_false_refusals_per_1000": 13.970588235294116,
+          "modeled_false_accepts_per_1000": 1.0000000000000009
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.7051282051282052,
+          0.8381773638209588
+        ],
+        "covered_wrong_action": [
+          0.010868096357226792,
+          0.07262569832402235
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.052083333333333336
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.037037037037037035
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.1579360036412254,
+        "p95": 3.527579494402744
+      }
+    },
+    "test": {
+      "rows": 238,
+      "counts": {
+        "expected_accept": 135,
+        "legal": 108,
+        "covered_expected_accept": 112,
+        "auto_correct_action": 176,
+        "false_accept": 2,
+        "false_refuse": 6,
+        "expected_refuse": 103,
+        "refuse_scope": 79,
+        "covered_expected_refuse": 75,
+        "auto_wrong_action": 11,
+        "review": 51,
+        "review:low_confidence": 51
+      },
+      "coverage": 0.7857142857142857,
+      "covered_action_accuracy": 0.9411764705882353,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.7788924847177274,
+          "modeled_false_refusals_per_1000": 22.22222222222222,
+          "modeled_false_accepts_per_1000": 9.70873786407767
+        },
+        "0.75": {
+          "modeled_coverage": 0.8042610571736786,
+          "modeled_false_refusals_per_1000": 33.33333333333333,
+          "modeled_false_accepts_per_1000": 4.854368932038835
+        },
+        "0.9": {
+          "modeled_coverage": 0.8194822006472492,
+          "modeled_false_refusals_per_1000": 40.0,
+          "modeled_false_accepts_per_1000": 1.9417475728155336
+        },
+        "0.95": {
+          "modeled_coverage": 0.8245559151384394,
+          "modeled_false_refusals_per_1000": 42.22222222222222,
+          "modeled_false_accepts_per_1000": 0.9708737864077678
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.7196614450454127,
+          0.8493880753138074
+        ],
+        "covered_wrong_action": [
+          0.02499381188118812,
+          0.09845538619110732
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.05154639175257732
+        ],
+        "false_refuse_among_accepts": [
+          0.007351599398883641,
+          0.09022686925647451
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.053640491794795,
+        "p95": 3.393293319095392
+      }
+    },
+    "challenge": {
+      "rows": 138,
+      "counts": {
+        "expected_accept": 69,
+        "review": 30,
+        "review:low_confidence": 27,
+        "expected_refuse": 69,
+        "refuse_scope": 57,
+        "covered_expected_refuse": 54,
+        "auto_correct_action": 95,
+        "false_accept": 2,
+        "false_refuse": 5,
+        "covered_expected_accept": 54,
+        "auto_wrong_action": 13,
+        "legal": 50,
+        "clarify": 1,
+        "review:unsupported_script": 3
+      },
+      "coverage": 0.782608695652174,
+      "covered_action_accuracy": 0.8796296296296297,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.782608695652174,
+          "modeled_false_refusals_per_1000": 36.231884057971016,
+          "modeled_false_accepts_per_1000": 14.492753623188406
+        },
+        "0.75": {
+          "modeled_coverage": 0.7826086956521738,
+          "modeled_false_refusals_per_1000": 54.34782608695652,
+          "modeled_false_accepts_per_1000": 7.246376811594203
+        },
+        "0.9": {
+          "modeled_coverage": 0.782608695652174,
+          "modeled_false_refusals_per_1000": 65.21739130434783,
+          "modeled_false_accepts_per_1000": 2.8985507246376803
+        },
+        "0.95": {
+          "modeled_coverage": 0.782608695652174,
+          "modeled_false_refusals_per_1000": 68.84057971014492,
+          "modeled_false_accepts_per_1000": 1.449275362318842
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.6985122196360558,
+          0.8671457219251336
+        ],
+        "covered_wrong_action": [
+          0.057692307692307696,
+          0.19047619047619047
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.07355684811237913
+        ],
+        "false_refuse_among_accepts": [
+          0.014925373134328358,
+          0.14285714285714285
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.0102749986108392,
+        "p95": 3.7083497416460887
+      }
+    }
+  },
+  "general_legal": {
+    "dev": {
+      "rows": 240,
+      "counts": {
+        "expected_accept": 149,
+        "legal": 118,
+        "covered_expected_accept": 123,
+        "auto_correct_action": 172,
+        "false_accept": 2,
+        "false_refuse": 7,
+        "review": 55,
+        "review:low_confidence": 55,
+        "expected_refuse": 91,
+        "refuse_scope": 67,
+        "covered_expected_refuse": 62,
+        "auto_wrong_action": 13
+      },
+      "coverage": 0.7708333333333334,
+      "covered_action_accuracy": 0.9297297297297298,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.7534110185116897,
+          "modeled_false_refusals_per_1000": 23.48993288590604,
+          "modeled_false_accepts_per_1000": 10.989010989010989
+        },
+        "0.75": {
+          "modeled_coverage": 0.7894571871081937,
+          "modeled_false_refusals_per_1000": 35.23489932885906,
+          "modeled_false_accepts_per_1000": 5.4945054945054945
+        },
+        "0.9": {
+          "modeled_coverage": 0.8110848882660963,
+          "modeled_false_refusals_per_1000": 42.28187919463087,
+          "modeled_false_accepts_per_1000": 2.1978021978021975
+        },
+        "0.95": {
+          "modeled_coverage": 0.8182941219853971,
+          "modeled_false_refusals_per_1000": 44.630872483221474,
+          "modeled_false_accepts_per_1000": 1.0989010989010999
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.7044534412955465,
+          0.8346782524660091
+        ],
+        "covered_wrong_action": [
+          0.035291161690806976,
+          0.11363636363636363
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.07058823529411765
+        ],
+        "false_refuse_among_accepts": [
+          0.01922770700636943,
+          0.08229048450458308
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.007860501180403,
+        "p95": 3.3653268939815457
+      }
+    },
+    "calibration": {
+      "rows": 236,
+      "counts": {
+        "expected_refuse": 90,
+        "refuse_scope": 64,
+        "covered_expected_refuse": 64,
+        "auto_correct_action": 175,
+        "false_accept": 2,
+        "false_refuse": 2,
+        "expected_accept": 146,
+        "legal": 118,
+        "covered_expected_accept": 118,
+        "review": 54,
+        "review:low_confidence": 54,
+        "auto_wrong_action": 7
+      },
+      "coverage": 0.7711864406779662,
+      "covered_action_accuracy": 0.9615384615384616,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.7596651445966514,
+          "modeled_false_refusals_per_1000": 6.8493150684931505,
+          "modeled_false_accepts_per_1000": 11.11111111111111
+        },
+        "0.75": {
+          "modeled_coverage": 0.7839421613394216,
+          "modeled_false_refusals_per_1000": 10.273972602739725,
+          "modeled_false_accepts_per_1000": 5.555555555555555
+        },
+        "0.9": {
+          "modeled_coverage": 0.7985083713850837,
+          "modeled_false_refusals_per_1000": 12.32876712328767,
+          "modeled_false_accepts_per_1000": 2.222222222222222
+        },
+        "0.95": {
+          "modeled_coverage": 0.8033637747336376,
+          "modeled_false_refusals_per_1000": 13.013698630136984,
+          "modeled_false_accepts_per_1000": 1.1111111111111123
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.7012448132780082,
+          0.8326534170153416
+        ],
+        "covered_wrong_action": [
+          0.010927476835352815,
+          0.07262569832402235
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.05748797113071362
+        ],
+        "false_refuse_among_accepts": [
+          0.0,
+          0.034971190781049905
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.0277709991205484,
+        "p95": 3.394603743799962
+      }
+    },
+    "test": {
+      "rows": 238,
+      "counts": {
+        "expected_accept": 146,
+        "legal": 117,
+        "covered_expected_accept": 122,
+        "auto_correct_action": 177,
+        "false_accept": 1,
+        "false_refuse": 6,
+        "expected_refuse": 92,
+        "refuse_scope": 70,
+        "covered_expected_refuse": 65,
+        "auto_wrong_action": 10,
+        "review": 51,
+        "review:low_confidence": 51
+      },
+      "coverage": 0.7857142857142857,
+      "covered_action_accuracy": 0.946524064171123,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.7710690887432996,
+          "modeled_false_refusals_per_1000": 20.54794520547945,
+          "modeled_false_accepts_per_1000": 5.434782608695652
+        },
+        "0.75": {
+          "modeled_coverage": 0.8033427635497319,
+          "modeled_false_refusals_per_1000": 30.821917808219176,
+          "modeled_false_accepts_per_1000": 2.717391304347826
+        },
+        "0.9": {
+          "modeled_coverage": 0.8227069684335914,
+          "modeled_false_refusals_per_1000": 36.986301369863014,
+          "modeled_false_accepts_per_1000": 1.0869565217391302
+        },
+        "0.95": {
+          "modeled_coverage": 0.8291617033948778,
+          "modeled_false_refusals_per_1000": 39.04109589041095,
+          "modeled_false_accepts_per_1000": 0.5434782608695656
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.7191489361702128,
+          0.8487494566792233
+        ],
+        "covered_wrong_action": [
+          0.020618556701030927,
+          0.09248554913294797
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.03883810364392887
+        ],
+        "false_refuse_among_accepts": [
+          0.006756756756756757,
+          0.08334677419354831
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.0318950118962675,
+        "p95": 3.4661624042200847
+      }
+    },
+    "challenge": {
+      "rows": 138,
+      "counts": {
+        "expected_accept": 76,
+        "review": 33,
+        "review:low_confidence": 30,
+        "expected_refuse": 62,
+        "refuse_scope": 50,
+        "covered_expected_refuse": 45,
+        "auto_correct_action": 92,
+        "false_accept": 1,
+        "false_refuse": 6,
+        "covered_expected_accept": 60,
+        "auto_wrong_action": 13,
+        "legal": 54,
+        "clarify": 1,
+        "review:unsupported_script": 3
+      },
+      "coverage": 0.7608695652173914,
+      "covered_action_accuracy": 0.8761904761904762,
+      "traffic_mix_projection": {
+        "0.5": {
+          "modeled_coverage": 0.7576400679117148,
+          "modeled_false_refusals_per_1000": 39.473684210526315,
+          "modeled_false_accepts_per_1000": 8.064516129032258
+        },
+        "0.75": {
+          "modeled_coverage": 0.7735568760611204,
+          "modeled_false_refusals_per_1000": 59.21052631578947,
+          "modeled_false_accepts_per_1000": 4.032258064516129
+        },
+        "0.9": {
+          "modeled_coverage": 0.7831069609507639,
+          "modeled_false_refusals_per_1000": 71.05263157894737,
+          "modeled_false_accepts_per_1000": 1.612903225806451
+        },
+        "0.95": {
+          "modeled_coverage": 0.7862903225806451,
+          "modeled_false_refusals_per_1000": 74.99999999999999,
+          "modeled_false_accepts_per_1000": 0.8064516129032265
+        }
+      },
+      "group_bootstrap_95": {
+        "coverage": [
+          0.6764652983495557,
+          0.8444444444444444
+        ],
+        "covered_wrong_action": [
+          0.05825242718446602,
+          0.1980693069306928
+        ],
+        "false_accept_among_refusals": [
+          0.0,
+          0.05172413793103448
+        ],
+        "false_refuse_among_accepts": [
+          0.02631578947368421,
+          0.14473684210526316
+        ]
+      },
+      "warm_api_ms": {
+        "p50": 2.1353984921006486,
+        "p95": 3.841259704495315
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "compared": 220,
+    "at_or_above_0_85": 0,
+    "at_or_above_0_95": 0,
+    "max_similarity": 0.790353000164032
+  },
+  "calibration": {
+    "compared": 224,
+    "at_or_above_0_85": 0,
+    "at_or_above_0_95": 0,
+    "max_similarity": 0.7900404334068298
+  },
+  "test": {
+    "compared": 218,
+    "at_or_above_0_85": 1,
+    "at_or_above_0_95": 0,
+    "max_similarity": 0.8547331690788269
+  },
+  "challenge": {
+    "compared": 126,
+    "at_or_above_0_85": 0,
+    "at_or_above_0_95": 0,
+    "max_similarity": 0.770578145980835
+  }
+}
