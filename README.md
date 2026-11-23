@@ -4,9 +4,10 @@ A local text classifier for legal-tech request intake. The model scores the oper
 
 ## Quick start
 
-The 55.2 KB sparse model runs on Python 3.11 or newer with the standard library. Clone the repository and place the `weights.json.gz` model artifact in the project directory. Pass a JSON request on standard input.
+The 55.2 KB sparse model runs on Python 3.11 or newer with the standard library. From the repository checkout, download the published weights and pass a JSON request on standard input. [Hugging Face model card](https://huggingface.co/AttoFlow-AI/legal-ai-prompt-guard)
 
 ```bash
+curl -fsSL https://huggingface.co/AttoFlow-AI/legal-ai-prompt-guard/resolve/6e7c45ec2de04f96b49368bc118403f261242cf1/weights.json.gz -o weights.json.gz
 python -m legal_gate --model weights.json.gz <<'JSON'
 {"input":"What remedies can an Indian tenant seek if the landlord withholds the security deposit?","questions":{"decision":{"type":"choice"},"route":{"type":"choice"}}}
 JSON
